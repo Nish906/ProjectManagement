@@ -30,7 +30,7 @@
         <p> 
             <asp:Button ID="btnBook" runat="server" Height="57px" Text="Book Appointment" Width="133px" OnClick="btnBook_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnClear" runat="server" Height="57px" Text="Clear Appointment" Width="133px" OnClick="btnClear_Click" />
+            <asp:Button ID="btnClear" runat="server" Height="57px" Text="Clear Appointment" Width="203px" OnClick="btnClear_Click" />
         </p>
 
 
