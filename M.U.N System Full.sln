@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M.U.N System BackEnd", "M.U.N System BackEnd\M.U.N System BackEnd.csproj", "{EC503114-1F2D-4E9C-86E3-5AB27E539498}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M.U.N System Front End(2)", "http://localhost:55346", "{0CD65A39-A9B7-474B-8119-312A5EFD45B3}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M.U.N System Front End", "http://localhost:55346", "{0CD65A39-A9B7-474B-8119-312A5EFD45B3}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassLibrary", "Appointme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFramework", "Appointment Testing\TestFramework\TestFramework.csproj", "{0B40A6B4-EE47-46F8-A143-D6E6E5C04A90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailBackEnd", "EmailBackEnd\EmailBackEnd.csproj", "{C982B690-BB86-4941-9674-A104A762C6BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{0B40A6B4-EE47-46F8-A143-D6E6E5C04A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B40A6B4-EE47-46F8-A143-D6E6E5C04A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B40A6B4-EE47-46F8-A143-D6E6E5C04A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C982B690-BB86-4941-9674-A104A762C6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C982B690-BB86-4941-9674-A104A762C6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C982B690-BB86-4941-9674-A104A762C6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C982B690-BB86-4941-9674-A104A762C6BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
