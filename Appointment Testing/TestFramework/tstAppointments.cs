@@ -321,10 +321,6 @@ namespace TestFramework
         }
 
 
-
-
-
-
         [TestMethod]
         public void AppointmentDateMaxMinusOne()
         {
@@ -552,5 +548,8 @@ namespace TestFramework
             //test to see that the result is correct
             Assert.IsTrue(OK);
         }
+
+
+
     }
 }

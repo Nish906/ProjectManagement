@@ -43,7 +43,7 @@ namespace MyClassLibrary
                 //???
             }
         }
-
+        //constructor for the class
         public clsAppointmentCollection()
         {
             //create an instance of dataconnction 
