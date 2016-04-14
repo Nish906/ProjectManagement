@@ -223,7 +223,7 @@ namespace TestFramework
             //declare testing variable
             Boolean OK;
             //pass data to the class library for testing
-            OK = TestAppointmentID.ValidAppointmentInvalid("aaaaaa");
+            OK = TestAppointmentID.AppointmentInvalid("aaaaaa");
             //evaluate return value
             Assert.IsTrue(OK);
         }
@@ -449,6 +449,24 @@ namespace TestFramework
             //create varible to store the test date data
             //set the dataadded to a non date value
             string AppointmentDate = "this is not a date!";
+            //invoke the method
+            OK = TestAppointmentDate.ValidAppointmentDate(AppointmentDetails, AppointmentDate);
+            //test to see that the results is correct
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void AppointmentDetailsInvaild()
+        {
+            //create an instance of a class
+            clsAppointments TestAppointmentDate = new clsAppointments();
+            //boolean varibale to store the result of the validation 
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string AppointmentDetails = "";
+            //create varible to store the test date data
+            //set the dataadded to a non date value
+            string AppointmentDate = "12/09/2015";
             //invoke the method
             OK = TestAppointmentDate.ValidAppointmentDate(AppointmentDetails, AppointmentDate);
             //test to see that the results is correct

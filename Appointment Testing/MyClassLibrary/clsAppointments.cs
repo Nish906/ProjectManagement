@@ -141,7 +141,7 @@ namespace MyClassLibrary
         }
 
         //testing method
-        public bool ValidAppointmentInvalid(string InvalidAppointment)
+        public bool AppointmentInvalid(string InvalidAppointment)
         {
             Int32 Test;
             try

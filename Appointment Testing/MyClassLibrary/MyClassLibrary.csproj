@@ -42,8 +42,6 @@
     <Compile Include="clsAppointmentCollection.cs" />
     <Compile Include="clsAppointments.cs" />
     <Compile Include="clsDataConnection.cs" />
-    <Compile Include="clsEmail.cs" />
-    <Compile Include="clsEmailCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

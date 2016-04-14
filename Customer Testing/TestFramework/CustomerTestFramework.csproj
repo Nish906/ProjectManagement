@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54BCC8EA-28D3-4C10-A339-23C01FDCE056}</ProjectGuid>
+    <ProjectGuid>{0A5E3FB4-86BB-4F8A-9C77-180210F6D71E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmailTesting</RootNamespace>
-    <AssemblyName>EmailTesting</AssemblyName>
+    <RootNamespace>TestFramework</RootNamespace>
+    <AssemblyName>TestFramework</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -51,12 +51,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tstEmail.cs" />
-    <Compile Include="tstEmailCollection.cs" />
+    <Compile Include="tstCustomer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Appointment Testing\MyClassLibrary\MyClassLibrary.csproj">
-      <Project>{79b8995d-98f6-43eb-9b35-4a51235b0cc2}</Project>
+    <ProjectReference Include="..\MyClassLibrary\CustomerClassLibrary.csproj">
+      <Project>{BE1D92EB-4B21-41DB-9257-7917ABB33497}</Project>
       <Name>MyClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>

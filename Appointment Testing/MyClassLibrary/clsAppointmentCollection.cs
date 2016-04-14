@@ -46,24 +46,29 @@ namespace MyClassLibrary
         //constructor for the class
         public clsAppointmentCollection()
         {
+            //set up the index for the loop
+            Int32 Index = 0;
+            Int32 RecordCount = 0;
             //create an instance of dataconnction 
             clsDataConnection DB = new clsDataConnection();
             //excute the store procedure to get the list of data
             DB.Execute("sproc_tblBookedAppointments_SelectAll");
             //get the count of records 
-            Int32 RecordCount = DB.Count;
-            //set up the index for the loop
-            Int32 Index = 0;
+            RecordCount = DB.Count;
             //while there are records to process
             while (Index < RecordCount)
             {
                 //create a nw instance of the appointment class
                 clsAppointments AAppointment = new clsAppointments();
-                //get the appointment details 
-                AAppointment.AppointmentDetails = DB.DataTable.Rows[Index]["AppointmentDetails"].ToString();
                 //get the primary key
                 AAppointment.AppointmentID = Convert.ToInt32(DB.DataTable.Rows[Index]["AppointmentID"]);
-                //increment the index
+                //get the appointment details 
+                AAppointment.AppointmentDetails = Convert.ToString(DB.DataTable.Rows[Index]["AppointmentDetails"]);
+                //get the appointment date
+                AAppointment.AppointmentDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["AppointmentDate"]);
+                //add the record to the private data member
+                appointmentsList.Add(AAppointment);
+                //points at next record
                 Index++;
             }
         }
