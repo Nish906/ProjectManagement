@@ -53,10 +53,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Customer FrontEnd", "http:/
 		SlnRelativePath = "Customer FrontEnd\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailBackEnd", "EmailBackEnd\EmailBackEnd\EmailBackEnd.csproj", "{ACCD4ED8-D46F-4EAE-8151-870071E1A807}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailTesting", "EmailBackEnd\EmailTesting\EmailTesting.csproj", "{54BCC8EA-28D3-4C10-A339-23C01FDCE056}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,14 +83,6 @@ Global
 		{FD7C10A3-B1C4-43D8-91FA-44EC9C14D117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD7C10A3-B1C4-43D8-91FA-44EC9C14D117}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD7C10A3-B1C4-43D8-91FA-44EC9C14D117}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{ACCD4ED8-D46F-4EAE-8151-870071E1A807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACCD4ED8-D46F-4EAE-8151-870071E1A807}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACCD4ED8-D46F-4EAE-8151-870071E1A807}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACCD4ED8-D46F-4EAE-8151-870071E1A807}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54BCC8EA-28D3-4C10-A339-23C01FDCE056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54BCC8EA-28D3-4C10-A339-23C01FDCE056}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54BCC8EA-28D3-4C10-A339-23C01FDCE056}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54BCC8EA-28D3-4C10-A339-23C01FDCE056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
