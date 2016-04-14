@@ -54,7 +54,7 @@
     <Compile Include="tstCustomer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyClassLibrary\MyClassLibrary.csproj">
+    <ProjectReference Include="..\MyClassLibrary\CustomerClassLibrary.csproj">
       <Project>{BE1D92EB-4B21-41DB-9257-7917ABB33497}</Project>
       <Name>MyClassLibrary</Name>
     </ProjectReference>
