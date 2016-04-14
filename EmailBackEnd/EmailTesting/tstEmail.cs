@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyClassLibrary;
 
@@ -14,7 +12,7 @@ namespace EmailTesting
     {
         public tstEmail()
         {
-            ////
+            //
             // TODO: Add constructor logic here
             //
         }
@@ -889,3 +887,4 @@ namespace EmailTesting
         }
     }
 }
+
