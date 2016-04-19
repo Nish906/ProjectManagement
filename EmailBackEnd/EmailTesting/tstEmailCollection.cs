@@ -98,14 +98,6 @@ namespace EmailTesting
             Assert.AreEqual(AllEmails.Count, TestList.Count);
         }
 
-        [TestMethod]
-        public void TwoRecordsPresent()
-        {
-            //Create an instance of the class we want to create
-            clsEmailCollection AllEmails = new clsEmailCollection();
-            //Test to see that it exists
-            Assert.AreEqual(AllEmails.Count, 2);
-        }
 
         /*[TestMethod] 
         public void AllEmailsOK()
