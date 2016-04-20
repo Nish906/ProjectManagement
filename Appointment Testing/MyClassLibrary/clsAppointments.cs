@@ -255,16 +255,16 @@ namespace MyClassLibrary
         } */
 
         public bool Find(int AppointmentID)
-        {
+       /* {
             appointmentID = 2;
             appointmentDate = Convert.ToDateTime("16/09/2016");
             appointmentDetails = "Software Upgrade";
             return true;
-        } 
-       /* {
+        } */
+        {
             clsDataConnection DB = new clsDataConnection();
             DB.AddParameter("@AppointmentID", AppointmentID);
-            DB.Execute("sproc_tblAppointmentTests_FilterByAppointmentID");
+            DB.Execute("sproc_tblAppointment_FilterByAppointmentID");
             if (DB.Count ==1)
             {
                 appointmentID = Convert.ToInt32(DB.DataTable.Rows[0]["AppointmentID"]);
@@ -276,7 +276,7 @@ namespace MyClassLibrary
             {
                 return false;
             }
-        } */
+        } 
     }
     }
     

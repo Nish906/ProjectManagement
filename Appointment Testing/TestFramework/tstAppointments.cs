@@ -545,27 +545,27 @@ namespace TestFramework
             Assert.IsTrue(Found);
         }
 
-        [TestMethod]
-        public void TestAppointmentID()
-        {
-            //create an instance of a class
-            clsAppointments TestAppointmentID = new clsAppointments();
-            //boolean varibale to store the result of the validation 
-            Boolean Found = false;
-            //boolean variable to record if data is OK (Assume it is)
-            Boolean OK = true;
-            //create some test data to use with the method
-            Int32 AppointmentID = 2;
-            //invoke the method
-            Found = TestAppointmentID.Find(AppointmentID);
-            //check the property 
-            if (TestAppointmentID.AppointmentID !=2)
-            {
-                OK = false;
-            }
-            //test to see that the result is correct
-            Assert.IsTrue(OK);
-        }
+        //[TestMethod]
+        //public void TestAppointmentID()
+        //{
+        //    //create an instance of a class
+        //    clsAppointments TestAppointmentID = new clsAppointments();
+        //    //boolean varibale to store the result of the validation 
+        //    Boolean Found = false;
+        //    //boolean variable to record if data is OK (Assume it is)
+        //    Boolean OK = true;
+        //    //create some test data to use with the method
+        //    Int32 AppointmentID = 2;
+        //    //invoke the method
+        //    Found = TestAppointmentID.Find(AppointmentID);
+        //    //check the property 
+        //    if (TestAppointmentID.AppointmentID !=2)
+        //    {
+        //        OK = false;
+        //    }
+        //    //test to see that the result is correct
+        //    Assert.IsTrue(OK);
+        //}
 
 
 
