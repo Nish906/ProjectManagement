@@ -52,7 +52,7 @@ namespace MyClassLibrary
             //create an instance of dataconnction 
             clsDataConnection DB = new clsDataConnection();
             //excute the store procedure to get the list of data
-            DB.Execute("sproc_tblAppointments_SelectAll");
+            DB.Execute("sproc_tblAppointment_SelectAll");
             //get the count of records 
             RecordCount = DB.Count;
             //while there are records to process

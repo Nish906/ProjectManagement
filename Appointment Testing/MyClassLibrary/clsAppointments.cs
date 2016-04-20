@@ -264,7 +264,7 @@ namespace MyClassLibrary
         {
             clsDataConnection DB = new clsDataConnection();
             DB.AddParameter("@AppointmentID", AppointmentID);
-            DB.Execute("sproc_tblAppointments_FilterByAppointmentID");
+            DB.Execute("sproc_tblAppointment_FilterByAppointmentID");
             if (DB.Count ==1)
             {
                 appointmentID = Convert.ToInt32(DB.DataTable.Rows[0]["AppointmentID"]);

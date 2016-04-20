@@ -494,7 +494,7 @@ namespace TestFramework
             //boolean varibale to store the result of the validation 
             Boolean Found = false;
             //create some test data to use with the method
-            Int32 AppointmentID = 4;
+            Int32 AppointmentID = 2;
             //invoke the method
             Found = TestAppointmentDate.Find(AppointmentID);
             //test to see that the result is correct
@@ -511,7 +511,7 @@ namespace TestFramework
             //boolean variable to record if data is OK (Assume it is)
             Boolean OK = true;
             //create some test data to use with the method
-            Int32 AppointmentID = 4;
+            Int32 AppointmentID = 2;
             //invoke the method
             Found = TestAppointmentDate.Find(AppointmentID);
             //check the property 
@@ -533,7 +533,7 @@ namespace TestFramework
             //boolean variable to record if data is OK (Assume it is)
             Boolean OK = true;
             //create some test data to use with the method
-            Int32 AppointmentID = 4;
+            Int32 AppointmentID = 2;
             //invoke the method
             Found = TestAppointmentDate.Find(AppointmentID);
             //check the property 
