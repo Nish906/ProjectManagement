@@ -9,7 +9,8 @@ namespace MyClassLibrary
     {
         //private data member for the allappointment list
         List<clsAppointments> appointmentsList = new List<clsAppointments>();
-
+        //private data member thisAppoitment
+        clsAppointments thisAppointment = new clsAppointments();
 
         //public property for allAppointments
         public List<clsAppointments> AppointmentsList
@@ -25,6 +26,23 @@ namespace MyClassLibrary
             {
                 //assign the incoming value to the private data member
                 appointmentsList = value;
+            }
+        }
+
+
+        //public property for ThisAppointment
+        public clsAppointments ThisAppointment
+        {
+            get
+            {
+                //return the private data
+                return thisAppointment;
+            }
+
+            set
+            {
+                //set the private data
+                thisAppointment = value;
             }
         }
 
@@ -71,6 +89,18 @@ namespace MyClassLibrary
                 //points at next record
                 Index++;
             }
+        }
+
+        public int Add()
+        {
+            //adds a new record to the database based on the values of thisAppointment
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameter for the store proceudre 
+            DB.AddParameter("@AppointmentDate", thisAppointment.AppointmentDate);
+            DB.AddParameter("@AppointmentDetails", thisAppointment.AppointmentDetails);
+            //excute the querry returning the primary key value
+            return DB.Execute("sproc_tblAppointment_Insert");
         }
     }
 }

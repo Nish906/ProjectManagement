@@ -84,5 +84,28 @@ namespace TestFramework
             Assert.AreEqual(Appointments.Count, 2);
         }
         */
+
+        [TestMethod]
+        public void AddMethodOK()
+        {
+            //create an instance of a class
+            clsAppointmentCollection AllAppointments = new clsAppointmentCollection();
+            //create the item of the test data
+            clsAppointments TestItem = new clsAppointments();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.AppointmentID = 5;
+            TestItem.AppointmentDate = Convert.ToDateTime("12/12/2012");
+            TestItem.AppointmentDetails = "Help";
+            //set ThisAppointment to the test data
+            PrimaryKey = AllAppointments.Add();
+            //set the primary key of the test data
+            TestItem.AppointmentID = PrimaryKey;
+            //find the record
+            AllAppointments.ThisAppointment.Find(PrimaryKey);
+            //test to see that the two values are the same
+            Assert.AreEqual(AllAppointments.ThisAppointment, TestItem);
+        }
     }
 }
