@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M.U.N System BackEnd", "M.U.N System BackEnd\M.U.N System BackEnd.csproj", "{EC503114-1F2D-4E9C-86E3-5AB27E539498}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M.U.N System Front End", "http://localhost:55346", "{0CD65A39-A9B7-474B-8119-312A5EFD45B3}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M.U.N System Front End(2)", "http://localhost:55346", "{0CD65A39-A9B7-474B-8119-312A5EFD45B3}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -56,6 +56,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailBackEnd", "EmailBackEnd\EmailBackEnd\EmailBackEnd.csproj", "{ACCD4ED8-D46F-4EAE-8151-870071E1A807}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailTesting", "EmailBackEnd\EmailTesting\EmailTesting.csproj", "{54BCC8EA-28D3-4C10-A339-23C01FDCE056}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App_Data", "App_Data", "{589FF519-9690-4F74-B67C-E6B608CAA3E5}"
+	ProjectSection(SolutionItems) = preProject
+		App_Data\OurDatabase.mdf = App_Data\OurDatabase.mdf
+		App_Data\OurDatabase_log.ldf = App_Data\OurDatabase_log.ldf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
