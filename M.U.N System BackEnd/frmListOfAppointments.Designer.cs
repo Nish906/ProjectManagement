@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnBook = new System.Windows.Forms.Button();
             this.lblFilter = new System.Windows.Forms.Label();
             this.lblListOfAppointments = new System.Windows.Forms.Label();
@@ -35,6 +36,12 @@
             this.btndelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
+            this.tblAppointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblAppointmentTableAdapter = new M.U.N_System_BackEnd.OurDatabaseDataSetTableAdapters.tblAppointmentTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
@@ -106,12 +113,38 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.tblAppointmentBindingSource;
+            this.listBox1.DisplayMember = "AppointmentDate";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(76, 86);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(369, 199);
+            this.listBox1.TabIndex = 29;
+            this.listBox1.ValueMember = "AppointmentDate";
+            // 
+            // ourDatabaseDataSet
+            // 
+            this.ourDatabaseDataSet.DataSetName = "OurDatabaseDataSet";
+            this.ourDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblAppointmentBindingSource
+            // 
+            this.tblAppointmentBindingSource.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource.DataSource = this.ourDatabaseDataSet;
+            // 
+            // tblAppointmentTableAdapter
+            // 
+            this.tblAppointmentTableAdapter.ClearBeforeFill = true;
+            // 
             // frmListOfAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(515, 436);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.lblListOfAppointments);
@@ -121,6 +154,9 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "frmListOfAppointments";
             this.Text = "frmListOfAppointments";
+            this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +171,9 @@
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ListBox listBox1;
+        private OurDatabaseDataSet ourDatabaseDataSet;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource;
+        private OurDatabaseDataSetTableAdapters.tblAppointmentTableAdapter tblAppointmentTableAdapter;
     }
 }

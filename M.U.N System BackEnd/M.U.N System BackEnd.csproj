@@ -95,6 +95,11 @@
     <Compile Include="frmUpdateAppointment.Designer.cs">
       <DependentUpon>frmUpdateAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="OurDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddAppointments.resx">
@@ -124,6 +129,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="OurDatabaseDataSet.xsc">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSet.xss">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
