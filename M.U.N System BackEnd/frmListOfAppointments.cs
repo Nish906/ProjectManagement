@@ -17,7 +17,22 @@ namespace M.U.N_System_BackEnd
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //create instance of form
+            frmUpdateAppointment UpdateAppointment = new frmUpdateAppointment();
+            //show form
+            UpdateAppointment.Show();
+        }
+
+        private void frmListOfAppointments_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'appointment_ListOfAppointments.tblAppointments' table. You can move, or remove it, as needed.
+            //this.tblAppointmentsTableAdapter.Fill(this.appointment_ListOfAppointments.tblAppointments);
+
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
             //create instance of form
             frmAddAppointments AddAppointments = new frmAddAppointments();
@@ -25,7 +40,7 @@ namespace M.U.N_System_BackEnd
             AddAppointments.Show();
         }
 
-        private void btndelete_Click(object sender, EventArgs e)
+        private void btndelete_Click_1(object sender, EventArgs e)
         {
             // Display a message box informing the user of there selection 
             MessageBox.Show("Are you sure you want to delete", "My Application",
@@ -41,15 +56,7 @@ namespace M.U.N_System_BackEnd
             MyList.Show();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            //create instance of form
-            frmUpdateAppointment UpdateAppointment = new frmUpdateAppointment();
-            //show form
-            UpdateAppointment.Show();
-        }
-
-        private void btnBook_Click(object sender, EventArgs e)
+        private void btnBook_Click_1(object sender, EventArgs e)
         {
             //create instance of form
             frmBookAppointment BookAppointment = new frmBookAppointment();
@@ -57,17 +64,10 @@ namespace M.U.N_System_BackEnd
             BookAppointment.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             //close form
             Close();
-        }
-
-        private void frmListOfAppointments_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'appointment_ListOfAppointments.tblAppointments' table. You can move, or remove it, as needed.
-            this.tblAppointmentsTableAdapter.Fill(this.appointment_ListOfAppointments.tblAppointments);
-
         }
     }
 }
