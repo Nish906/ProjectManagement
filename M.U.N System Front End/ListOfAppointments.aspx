@@ -21,10 +21,7 @@
         <asp:Button ID="btnFilter" runat="server" Text="Filter By Dates" OnClick="btnFilter_Click" Width="155px" />
 
         <br />
-        <asp:ListBox ID="lstBoxAppointments" runat="server" Height="396px" Width="615px" DataSourceID="SqlDataSource1" DataTextField="Appointment_Date" DataValueField="Appointment_Date"></asp:ListBox>
-        
-        
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Appointment DatabaseConnectionString %>" SelectCommand="SELECT [Appointment Date] AS Appointment_Date, [Appointment Time] AS Appointment_Time FROM [tblAppointments]"></asp:SqlDataSource>
+        <asp:ListBox ID="lstBoxAppointments" runat="server" Height="354px" Width="526px"></asp:ListBox>
         
         
         <br />
