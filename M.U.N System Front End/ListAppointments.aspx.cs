@@ -5,9 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class ListOfAppointments : System.Web.UI.Page
+public partial class ListAppointments : System.Web.UI.Page
 {
-    //this function handles the load event for the page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (IsPostBack == false)
@@ -15,6 +14,7 @@ public partial class ListOfAppointments : System.Web.UI.Page
             DispayAppointmentDates();
         }
     }
+
 
     void DispayAppointmentDates()
     {
@@ -43,7 +43,7 @@ public partial class ListOfAppointments : System.Web.UI.Page
             //send user to booking appointment page
             Response.Redirect("Booking Appointment.aspx");
 
-        } 
+        }
     }
     protected void btnFilter_Click(object sender, EventArgs e)
     {
@@ -64,13 +64,5 @@ public partial class ListOfAppointments : System.Web.UI.Page
     {
         //redirects user to booking appointments page
         Response.Redirect("Book Appointment.aspx");
-    }
-    protected void lstAppointments_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-    protected void lstBoxAppointmentDates_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
     }
 }
