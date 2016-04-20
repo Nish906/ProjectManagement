@@ -9,6 +9,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M.U.N System Front End(2)",
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{79b8995d-98f6-43eb-9b35-4a51235b0cc2}|MyClassLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_55346"
 		Debug.AspNetCompiler.PhysicalPath = "M.U.N System Front End\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55346\"

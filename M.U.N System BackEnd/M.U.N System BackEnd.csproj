@@ -59,11 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment_ListOfAppointments.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Appointment_ListOfAppointments.xsd</DependentUpon>
-    </Compile>
     <Compile Include="frmAddAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,17 +124,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Appointment_ListOfAppointments.xsc">
-      <DependentUpon>Appointment_ListOfAppointments.xsd</DependentUpon>
-    </None>
-    <None Include="Appointment_ListOfAppointments.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Appointment_ListOfAppointments.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Appointment_ListOfAppointments.xss">
-      <DependentUpon>Appointment_ListOfAppointments.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,15 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Appointment Database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Appointment Database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Appointment Database.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
