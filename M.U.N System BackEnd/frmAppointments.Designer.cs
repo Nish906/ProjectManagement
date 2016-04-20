@@ -38,7 +38,7 @@
             // 
             this.btnReview.Location = new System.Drawing.Point(93, 116);
             this.btnReview.Name = "btnReview";
-            this.btnReview.Size = new System.Drawing.Size(152, 41);
+            this.btnReview.Size = new System.Drawing.Size(159, 41);
             this.btnReview.TabIndex = 4;
             this.btnReview.Text = "Review Appointments";
             this.btnReview.UseVisualStyleBackColor = true;
