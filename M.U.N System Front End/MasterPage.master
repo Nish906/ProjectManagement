@@ -36,7 +36,7 @@
         <asp:Button ID="btnUserPage" runat="server" Text="My Page" Width="100px" OnClick="btnUserPage_Click1" />
         &nbsp;&nbsp;
         <asp:Button ID="btnRegister" runat="server" Text="Register" Width="100px" OnClick="btnRegister_Click" />
-        &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnStaffLogIn0" runat="server" Text="Staff Login" Width="114px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnStaffLogIn0" runat="server" Text="Staff Login" Width="114px" OnClick="btnStaffLogIn0_Click" />
         &nbsp;&nbsp;
         <asp:Label ID="lblLoginError" runat="server" Font-Names="Century Gothic" Font-Bold="True" ForeColor="Red"></asp:Label>
     &nbsp;&nbsp;&nbsp;

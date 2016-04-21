@@ -33,11 +33,6 @@
             <asp:Button ID="btnClear" runat="server" Height="57px" Text="Clear Appointment" Width="203px" OnClick="btnClear_Click" />
         </p>
 
-
-
-
-
-
     </article>
 </asp:Content>
 

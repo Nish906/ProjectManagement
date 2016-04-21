@@ -96,4 +96,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         Response.Redirect("ContactUs.aspx");
     }
+    protected void btnStaffLogIn0_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("StaffAppointments.aspx");
+    }
 }

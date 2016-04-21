@@ -159,7 +159,7 @@ namespace MyClassLibrary
         {
             DateTime TempDate;
             Boolean OK = true;
-            try
+            
             {
                 TempDate = Convert.ToDateTime(TestDate);
                 if (TempDate < DateTime.Now.Date.AddDays(-1))
@@ -168,10 +168,7 @@ namespace MyClassLibrary
                 }
             }
 
-            catch
-            {
-                
-            }
+           
             return true;
         }
 
@@ -193,7 +190,7 @@ namespace MyClassLibrary
 
                 if (DateTemp > DateTime.Now.Date.AddDays(730))
                 {
-                    OK = false;
+                    OK = true;
                 }
                 //return the value to OK
                 return OK;
@@ -269,7 +266,7 @@ namespace MyClassLibrary
             {
                 appointmentID = Convert.ToInt32(DB.DataTable.Rows[0]["AppointmentID"]);
                 appointmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["AppointmentDate"]);
-                appointmentDetails = Convert.ToString(DB.DataTable.Rows[0]["AppointmentDetails"]);
+                //appointmentDetails = Convert.ToString(DB.DataTable.Rows[0]["AppointmentDetails"]);
                 return true;
             }
             else

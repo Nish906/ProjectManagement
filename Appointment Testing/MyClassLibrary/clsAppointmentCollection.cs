@@ -81,7 +81,6 @@ namespace MyClassLibrary
                 //get the primary key
                 AAppointment.AppointmentID = Convert.ToInt32(DB.DataTable.Rows[Index]["AppointmentID"]);
                 //get the appointment details 
-                AAppointment.AppointmentDetails = Convert.ToString(DB.DataTable.Rows[Index]["AppointmentDetails"]);
                 //get the appointment date
                 AAppointment.AppointmentDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["AppointmentDate"]);
                 //add the record to the private data member
@@ -93,6 +92,7 @@ namespace MyClassLibrary
 
         public int Add()
         {
+
             //adds a new record to the database based on the values of thisAppointment
             //connect to the database
             clsDataConnection DB = new clsDataConnection();

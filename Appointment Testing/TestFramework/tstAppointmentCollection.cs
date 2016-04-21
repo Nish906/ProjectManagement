@@ -96,8 +96,7 @@ namespace TestFramework
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.AppointmentID = 5;
-            //TestItem.AppointmentDate = Convert.ToDateTime("1/1/1753 12:00:00");
-            TestItem.AppointmentDetails = "Help";
+            TestItem.AppointmentDate = Convert.ToDateTime("1/1/2013");
             //set ThisAppointment to the test data
             PrimaryKey = AllAppointments.Add();
             //set the primary key of the test data
