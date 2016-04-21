@@ -34,8 +34,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.txtAppointmentTime = new System.Windows.Forms.TextBox();
-            this.lblAppointmentTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAddAppointment
@@ -67,7 +65,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(46, 165);
+            this.btnAdd.Location = new System.Drawing.Point(46, 143);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(114, 29);
             this.btnAdd.TabIndex = 5;
@@ -77,7 +75,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(180, 165);
+            this.btnClose.Location = new System.Drawing.Point(180, 143);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(112, 29);
             this.btnClose.TabIndex = 6;
@@ -90,27 +88,10 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(54, 212);
+            this.lblError.Location = new System.Drawing.Point(54, 190);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 16);
             this.lblError.TabIndex = 7;
-            // 
-            // txtAppointmentTime
-            // 
-            this.txtAppointmentTime.Location = new System.Drawing.Point(192, 127);
-            this.txtAppointmentTime.Name = "txtAppointmentTime";
-            this.txtAppointmentTime.Size = new System.Drawing.Size(100, 20);
-            this.txtAppointmentTime.TabIndex = 9;
-            // 
-            // lblAppointmentTime
-            // 
-            this.lblAppointmentTime.AutoSize = true;
-            this.lblAppointmentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppointmentTime.Location = new System.Drawing.Point(43, 128);
-            this.lblAppointmentTime.Name = "lblAppointmentTime";
-            this.lblAppointmentTime.Size = new System.Drawing.Size(117, 16);
-            this.lblAppointmentTime.TabIndex = 8;
-            this.lblAppointmentTime.Text = "Appointment Time";
             // 
             // frmAddAppointments
             // 
@@ -118,8 +99,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(350, 246);
-            this.Controls.Add(this.txtAppointmentTime);
-            this.Controls.Add(this.lblAppointmentTime);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAdd);
@@ -142,7 +121,5 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.TextBox txtAppointmentTime;
-        private System.Windows.Forms.Label lblAppointmentTime;
     }
 }

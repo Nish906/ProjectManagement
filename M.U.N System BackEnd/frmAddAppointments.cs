@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyClassLibrary;
 
 namespace M.U.N_System_BackEnd
 {
@@ -26,21 +27,38 @@ namespace M.U.N_System_BackEnd
         {
             if (txtAppointmentDate.Text == "")
             {
-                lblError.Text = "Please fill in all fields to continue!";
+                lblError.Text = "Please enter the date into text box above";
             }
-            else
+
+            string[] Values = 
             {
-                // Display a message box informing the user of there selection 
-                MessageBox.Show("You are about to add an appointment?", "My Application",
-                    //Displays Ok or cancel as buttons 
-                MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-                //create instance of form
-                frmListOfAppointments MyList = new frmListOfAppointments();
-                //refresh List
-                MyList.Refresh();
-                //close form
-                Close();
-            }
+                txtAppointmentDate.Text
+            };
+
+            clsAppointmentCollection addAppointment = new clsAppointmentCollection();
+            addAppointment.Add();
+            this.Hide();
+            frmListOfAppointments form = new frmListOfAppointments();
+            form.Show();
+            form.ShowDialog();
+            this.Close();
+            //if (txtAppointmentDate.Text == "")
+                //{
+            //    lblError.Text = "Please fill in all fields to continue!";
+            //}
+            //else
+            //{
+            //    // Display a message box informing the user of there selection 
+            //    MessageBox.Show("You are about to add an appointment?", "My Application",
+            //        //Displays Ok or cancel as buttons 
+            //    MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            //    //create instance of form
+            //    frmListOfAppointments MyList = new frmListOfAppointments();
+            //    //refresh List
+            //    MyList.Refresh();
+            //    //close form
+            //    Close();
+            //}
         }
 
         private void btnClose_Click(object sender, EventArgs e)
