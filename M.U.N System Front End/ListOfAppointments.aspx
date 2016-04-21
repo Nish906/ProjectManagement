@@ -21,7 +21,7 @@
         <asp:Button ID="btnFilter" runat="server" Text="Filter By Dates" OnClick="btnFilter_Click" Width="155px" />
 
         <br />
-        <asp:ListBox ID="lstBoxAppointmentDates" runat="server" Height="224px" Width="298px"></asp:ListBox>
+        <asp:ListBox ID="lstBoxAppointmentDates" runat="server" Height="224px" Width="298px" OnSelectedIndexChanged="lstBoxAppointmentDates_SelectedIndexChanged1"></asp:ListBox>
         
         
         <br />

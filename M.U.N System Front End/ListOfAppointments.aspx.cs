@@ -73,4 +73,8 @@ public partial class ListOfAppointments : System.Web.UI.Page
     {
 
     }
+    protected void lstBoxAppointmentDates_SelectedIndexChanged1(object sender, EventArgs e)
+    {
+
+    }
 }
