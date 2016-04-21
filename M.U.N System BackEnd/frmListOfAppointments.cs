@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyClassLibrary;
 
 namespace M.U.N_System_BackEnd
 {
@@ -42,18 +43,25 @@ namespace M.U.N_System_BackEnd
 
         private void btndelete_Click_1(object sender, EventArgs e)
         {
-            // Display a message box informing the user of there selection 
-            MessageBox.Show("Are you sure you want to delete", "My Application",
-                //Displays Ok or cancel as buttons 
-            MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-            //close form
-            Close();
-            //create instance of form
-            frmListOfAppointments MyList = new frmListOfAppointments();
-            //refresh List
-            MyList.Refresh();
-            //re-opens form
-            MyList.Show();
+            clsAppointmentCollection delete = new clsAppointmentCollection();
+            delete.Delete();
+            this.Hide();
+            frmListOfAppointments form = new frmListOfAppointments();
+            form.Show();
+            this.Close();
+
+            //// Display a message box informing the user of there selection 
+            //MessageBox.Show("Are you sure you want to delete", "My Application",
+            //    //Displays Ok or cancel as buttons 
+            //MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            ////close form
+            //Close();
+            ////create instance of form
+            //frmListOfAppointments MyList = new frmListOfAppointments();
+            ////refresh List
+            //MyList.Refresh();
+            ////re-opens form
+            //MyList.Show();
         }
 
         private void btnBook_Click_1(object sender, EventArgs e)

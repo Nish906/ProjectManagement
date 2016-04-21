@@ -7,7 +7,7 @@
         <h2> My Bookings</h2>
                 <asp:Label ID="lblStartDate" runat="server" Text="Start Date"></asp:Label>
         &nbsp;
-        <asp:TextBox ID="txtStartDate" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtStartDate" runat="server" OnTextChanged="txtStartDate_TextChanged"></asp:TextBox>
 
         &nbsp;&nbsp;
 

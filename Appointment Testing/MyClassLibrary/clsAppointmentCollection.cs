@@ -101,5 +101,18 @@ namespace MyClassLibrary
             //excute the querry returning the primary key value
             return DB.Execute("sproc_tblAppointment_Insert");
         }
+
+        public void Delete()
+        {
+            //deletes the recor pointed to by thisAppointment
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameter for the store procedure
+            DB.AddParameter("@AppointmentID", thisAppointment.AppointmentID);
+            //Excute the store procedure
+            DB.Execute("sproc_tblAppointment_Delete");
+        }
+
+        
     }
 }

@@ -95,9 +95,11 @@ namespace TestFramework
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
-            //TestItem.AppointmentID = 5;
+            TestItem.AppointmentID = 5;
             TestItem.AppointmentDate = Convert.ToDateTime("12/12/2015");
             //set ThisAppointment to the test data
+            AllAppointments.ThisAppointment = TestItem;
+            //add the record
             PrimaryKey = AllAppointments.Add();
             //set the primary key of the test data
             TestItem.AppointmentID = PrimaryKey;
@@ -105,6 +107,33 @@ namespace TestFramework
             AllAppointments.ThisAppointment.Find(PrimaryKey);
             //test to see that the two values are the same
             Assert.AreEqual(AllAppointments.ThisAppointment, TestItem);
+        }
+
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //create an instance of a class
+            clsAppointmentCollection AllAppointments = new clsAppointmentCollection();
+            //create the item of the test data
+            clsAppointments TestItem = new clsAppointments();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.AppointmentID = 15;
+            TestItem.AppointmentDate = Convert.ToDateTime("22/04/2016");
+            AllAppointments.ThisAppointment = TestItem;
+            //set ThisAppointment to the test data
+            PrimaryKey = AllAppointments.Add();
+            //set the primary key of the test data
+            TestItem.AppointmentID = PrimaryKey;
+            //find the record
+            AllAppointments.ThisAppointment.Find(PrimaryKey);
+            //delete the record
+            AllAppointments.Delete();
+            //now find the record
+            Boolean Found = AllAppointments.ThisAppointment.Find(PrimaryKey);
+            //test to see that the record was not found
+            Assert.IsFalse(Found);
         }
     }
 }
