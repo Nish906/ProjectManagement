@@ -25,16 +25,27 @@ namespace M.U.N_System_BackEnd
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+           // DateTime val = Convert.ToDateTime(txtAppointmentDate.Text);
+
+           // string sqlFormat = val.ToString("yyyy-MM-dd HH:mm:ss");
+            
+
+            //DateTime dt = DateTime.ParseExact(val, "dd.M.yyyy hh:mm:ss", null);
+           // System.Data.SqlTypes.SqlDateTime dtSql = System.Data.SqlTypes.SqlDateTime.Parse(dt.ToString("dd/MM/yyyy"));
+
             if (txtAppointmentDate.Text == "")
             {
                 lblError.Text = "Please enter the date into text box above";
             }
 
-            string[] Values = 
-            {
-                txtAppointmentDate.Text
-            };
+            //Field = DateTime.Parse(txtAppointmentDate.Text);
 
+            //Field = Convert.ToDateTime(txtAppointmentDate);
+             
+            
+            Convert.ToDateTime(txtAppointmentDate);
+           
             clsAppointmentCollection addAppointment = new clsAppointmentCollection();
             addAppointment.Add();
             this.Hide();
@@ -42,6 +53,9 @@ namespace M.U.N_System_BackEnd
             form.Show();
             form.ShowDialog();
             this.Close();
+
+
+
             //if (txtAppointmentDate.Text == "")
                 //{
             //    lblError.Text = "Please fill in all fields to continue!";

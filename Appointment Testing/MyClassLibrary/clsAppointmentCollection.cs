@@ -98,7 +98,6 @@ namespace MyClassLibrary
             clsDataConnection DB = new clsDataConnection();
             //set the parameter for the store proceudre 
             DB.AddParameter("@AppointmentDate", thisAppointment.AppointmentDate);
-            DB.AddParameter("@AppointmentDetails", thisAppointment.AppointmentDetails);
             //excute the querry returning the primary key value
             return DB.Execute("sproc_tblAppointment_Insert");
         }

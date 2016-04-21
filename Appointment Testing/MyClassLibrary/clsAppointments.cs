@@ -190,7 +190,7 @@ namespace MyClassLibrary
 
                 if (DateTemp > DateTime.Now.Date.AddDays(730))
                 {
-                    OK = true;
+                    OK = false;
                 }
                 //return the value to OK
                 return OK;

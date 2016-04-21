@@ -64,6 +64,6 @@ public partial class StaffAddAppointment : System.Web.UI.Page
         //add new record
         Add();
         //all done so redirect back to main page
-        Response.Redirect("StaffAppointments");
+        Response.Redirect("StaffAppointments.aspx");
     }
 }
