@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using MyClassLibrary;
 
 namespace M.U.N_System_BackEnd
@@ -25,6 +27,26 @@ namespace M.U.N_System_BackEnd
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            string constring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=..\\App_Data\\OurDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            string Querry="insert into OurDatabase.tblAppointment(AppointmentID, AppointmentDate) values ('"+this.txtAppointmentID.Text+"','"+this.txtAppointmentDate.Text+"') ;";
+            SqlConnection conDatabase = new SqlConnection(constring); 
+            SqlCommand cmdDatabase = new SqlCommand(Querry, conDatabase);
+            SqlDataReader myReader;
+            try
+            {
+                conDatabase.Open();
+                myReader = cmdDatabase.ExecuteReader();
+                MessageBox.Show("Saved");
+                while (myReader.Read())
+                {
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
            // DateTime val = Convert.ToDateTime(txtAppointmentDate.Text);
 
@@ -44,15 +66,15 @@ namespace M.U.N_System_BackEnd
             //Field = Convert.ToDateTime(txtAppointmentDate);
              
             
-            Convert.ToDateTime(txtAppointmentDate);
+            //Convert.ToDateTime(txtAppointmentDate);
            
-            clsAppointmentCollection addAppointment = new clsAppointmentCollection();
-            addAppointment.Add();
-            this.Hide();
-            frmListOfAppointments form = new frmListOfAppointments();
-            form.Show();
-            form.ShowDialog();
-            this.Close();
+            //clsAppointmentCollection addAppointment = new clsAppointmentCollection();
+            //addAppointment.Add();
+            //this.Hide();
+            //frmListOfAppointments form = new frmListOfAppointments();
+            //form.Show();
+            //form.ShowDialog();
+            //this.Close();
 
 
 
@@ -81,20 +103,20 @@ namespace M.U.N_System_BackEnd
             Close();
         }
 
-        void Add()
-        {
-            MyClassLibrary.clsAppointmentCollection AppointmentBook = new clsAppointmentCollection();
-            Boolean OK = AppointmentBook.ThisAppointment.ValidAppointmentDate(txtAppointmentDate);
-            if (OK == true)
-            {
-                AppointmentBook.ThisAppointment.AppointmentDate = Convert.ToDateTime(txtAppointmentDate);
-                AppointmentBook.Add;
+        //void Add()
+        //{
+        //    MyClassLibrary.clsAppointmentCollection AppointmentBook = new clsAppointmentCollection();
+        //    Boolean OK = AppointmentBook.ThisAppointment.ValidAppointmentDate(txtAppointmentDate);
+        //    if (OK == true)
+        //    {
+        //        AppointmentBook.ThisAppointment.AppointmentDate = Convert.ToDateTime(txtAppointmentDate);
+        //        AppointmentBook.Add;
 
-            }
-            else
-            {
-                lblError.Text = "Error";
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        lblError.Text = "Error";
+        //    }
+        //}
     }
 }
