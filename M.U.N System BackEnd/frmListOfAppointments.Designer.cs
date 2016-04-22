@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnBook = new System.Windows.Forms.Button();
             this.lblFilter = new System.Windows.Forms.Label();
             this.lblListOfAppointments = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.btndelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.ourDatabaseDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SuspendLayout();
             // 
             // btnBook
@@ -106,6 +108,13 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+             
+            // 
+            this.ourDatabaseDataSet3BindingSource.Position = 0;
+            // 
+            
+            // 
+            // 
             // frmListOfAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +131,8 @@
             this.Name = "frmListOfAppointments";
             this.Text = "frmListOfAppointment";
             this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3BindingSource)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +147,7 @@
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.BindingSource ourDatabaseDataSet3BindingSource;
+        
     }
 }
