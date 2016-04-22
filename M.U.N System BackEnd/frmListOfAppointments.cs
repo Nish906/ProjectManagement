@@ -80,8 +80,8 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet2.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter1.Fill(this.ourDatabaseDataSet2.tblAppointment);
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet3.tblAppointment' table. You can move, or remove it, as needed.
+            this.tblAppointmentTableAdapter2.Fill(this.ourDatabaseDataSet3.tblAppointment);
 
         }
     }

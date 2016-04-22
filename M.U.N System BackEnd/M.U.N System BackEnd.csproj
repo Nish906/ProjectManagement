@@ -110,6 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OurDatabaseDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OurDatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddAppointments.resx">
@@ -171,6 +176,17 @@
     </None>
     <None Include="OurDatabaseDataSet2.xss">
       <DependentUpon>OurDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet3.xsc">
+      <DependentUpon>OurDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSet3.xss">
+      <DependentUpon>OurDatabaseDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

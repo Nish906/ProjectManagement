@@ -37,18 +37,25 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
-            this.ourDatabaseDataSet1 = new M.U.N_System_BackEnd.OurDatabaseDataSet1();
+            this.tblAppointmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentTableAdapter = new M.U.N_System_BackEnd.OurDatabaseDataSetTableAdapters.tblAppointmentTableAdapter();
             this.tblAppointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ourDatabaseDataSet2 = new M.U.N_System_BackEnd.OurDatabaseDataSet2();
-            this.tblAppointmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentTableAdapter1 = new M.U.N_System_BackEnd.OurDatabaseDataSet2TableAdapters.tblAppointmentTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet1)).BeginInit();
+            this.ourDatabaseDataSet2 = new M.U.N_System_BackEnd.OurDatabaseDataSet2();
+            this.ourDatabaseDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
+            this.ourDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSet3 = new M.U.N_System_BackEnd.OurDatabaseDataSet3();
+            this.tblAppointmentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblAppointmentTableAdapter2 = new M.U.N_System_BackEnd.OurDatabaseDataSet3TableAdapters.tblAppointmentTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
@@ -122,7 +129,7 @@
             // 
             // listBox1
             // 
-            this.listBox1.DataSource = this.tblAppointmentBindingSource1;
+            this.listBox1.DataSource = this.tblAppointmentBindingSource2;
             this.listBox1.DisplayMember = "AppointmentDate";
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(76, 86);
@@ -130,16 +137,6 @@
             this.listBox1.Size = new System.Drawing.Size(369, 199);
             this.listBox1.TabIndex = 29;
             this.listBox1.ValueMember = "AppointmentDate";
-            // 
-            // ourDatabaseDataSet
-            // 
-            this.ourDatabaseDataSet.DataSetName = "OurDatabaseDataSet";
-            this.ourDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ourDatabaseDataSet1
-            // 
-            this.ourDatabaseDataSet1.DataSetName = "OurDatabaseDataSet1";
-            this.ourDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblAppointmentTableAdapter
             // 
@@ -149,19 +146,43 @@
             // 
             this.tblAppointmentBindingSource.DataMember = "tblAppointment";
             // 
+            // tblAppointmentTableAdapter1
+            // 
+            this.tblAppointmentTableAdapter1.ClearBeforeFill = true;
+            // 
             // ourDatabaseDataSet2
             // 
             this.ourDatabaseDataSet2.DataSetName = "OurDatabaseDataSet2";
             this.ourDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblAppointmentBindingSource1
+            // ourDatabaseDataSet2BindingSource
             // 
-            this.tblAppointmentBindingSource1.DataMember = "tblAppointment";
-            this.tblAppointmentBindingSource1.DataSource = this.ourDatabaseDataSet2;
+            this.ourDatabaseDataSet2BindingSource.DataSource = this.ourDatabaseDataSet2;
+            this.ourDatabaseDataSet2BindingSource.Position = 0;
             // 
-            // tblAppointmentTableAdapter1
+            // ourDatabaseDataSet
             // 
-            this.tblAppointmentTableAdapter1.ClearBeforeFill = true;
+            this.ourDatabaseDataSet.DataSetName = "OurDatabaseDataSet";
+            this.ourDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ourDatabaseDataSetBindingSource
+            // 
+            this.ourDatabaseDataSetBindingSource.DataSource = this.ourDatabaseDataSet;
+            this.ourDatabaseDataSetBindingSource.Position = 0;
+            // 
+            // ourDatabaseDataSet3
+            // 
+            this.ourDatabaseDataSet3.DataSetName = "OurDatabaseDataSet3";
+            this.ourDatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblAppointmentBindingSource2
+            // 
+            this.tblAppointmentBindingSource2.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource2.DataSource = this.ourDatabaseDataSet3;
+            // 
+            // tblAppointmentTableAdapter2
+            // 
+            this.tblAppointmentTableAdapter2.ClearBeforeFill = true;
             // 
             // frmListOfAppointments
             // 
@@ -180,11 +201,14 @@
             this.Name = "frmListOfAppointments";
             this.Text = "frmListOfAppointments";
             this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,12 +224,16 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listBox1;
-        private OurDatabaseDataSet ourDatabaseDataSet;
         private System.Windows.Forms.BindingSource tblAppointmentBindingSource;
-        private OurDatabaseDataSet1 ourDatabaseDataSet1;
         private OurDatabaseDataSetTableAdapters.tblAppointmentTableAdapter tblAppointmentTableAdapter;
-        private OurDatabaseDataSet2 ourDatabaseDataSet2;
         private System.Windows.Forms.BindingSource tblAppointmentBindingSource1;
         private OurDatabaseDataSet2TableAdapters.tblAppointmentTableAdapter tblAppointmentTableAdapter1;
+        private System.Windows.Forms.BindingSource ourDatabaseDataSetBindingSource;
+        private OurDatabaseDataSet ourDatabaseDataSet;
+        private OurDatabaseDataSet2 ourDatabaseDataSet2;
+        private System.Windows.Forms.BindingSource ourDatabaseDataSet2BindingSource;
+        private OurDatabaseDataSet3 ourDatabaseDataSet3;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource2;
+        private OurDatabaseDataSet3TableAdapters.tblAppointmentTableAdapter tblAppointmentTableAdapter2;
     }
 }
