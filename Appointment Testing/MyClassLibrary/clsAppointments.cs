@@ -13,6 +13,12 @@ namespace MyClassLibrary
         private DateTime appointmentDate;
         //private data member for the AppointmentDetails Property
         private string appointmentDetails;
+        //private data member for the FirstName Property
+        private string firstName;
+        //private data member for the LastName Property
+        private string lastName;
+        //private data member for the LastName Property
+        private string emailAddress;
         
         
         //auto generated property
@@ -58,6 +64,45 @@ namespace MyClassLibrary
                 appointmentDate = value;
             }
         
+        }
+
+        //auto generated property
+        public string FirstName
+        {
+            get
+            {
+                return firstName;
+            }
+            set
+            {
+                firstName = value;
+            }
+        }
+
+        //auto generated property
+        public string LastName
+        {
+            get
+            {
+                return lastName;
+            }
+            set
+            {
+                lastName = value;
+            }
+        }
+
+        //auto generated property
+        public string EmailAddress
+        {
+            get
+            {
+                return emailAddress;
+            }
+            set
+            {
+                emailAddress = value;
+            }
         }
 
 

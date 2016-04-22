@@ -33,6 +33,11 @@ namespace M.U.N_System_BackEnd
             AddAppointments.Show();
         }
 
+        public static class LoginInfo
+        {
+            public static string AppointmentID;
+        }
+
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblBookedAppointments' table. You can move, or remove it, as needed.

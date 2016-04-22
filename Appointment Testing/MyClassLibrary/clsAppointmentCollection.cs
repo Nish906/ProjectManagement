@@ -113,6 +113,18 @@ namespace MyClassLibrary
             DB.Execute("sproc_tblAppointment_Delete");
         }
 
+        public int AddBooking()
+        {
+            clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("@FirstName", thisAppointment.FirstName);
+            DB.AddParameter("@LastName", thisAppointment.LastName);
+            DB.AddParameter("@EmailAddress", thisAppointment.EmailAddress);
+            DB.AddParameter("@AppointmentDetails", thisAppointment.AppointmentDetails);
+            DB.AddParameter("@AppointmentDate", thisAppointment.AppointmentDate);
+            return DB.Execute("sproc_tblBookedAppointments_Insert");
+
+        }
+
         
     }
 }

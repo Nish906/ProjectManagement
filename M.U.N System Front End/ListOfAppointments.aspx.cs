@@ -32,18 +32,29 @@ public partial class ListOfAppointments : System.Web.UI.Page
 
     protected void btnBook_Click(object sender, EventArgs e)
     {
-        //if statement to test if user has selected a date from the list
         if (lstBoxAppointmentDates.SelectedIndex == -1)
         {
-            //error message shown to user
-            lblError.Text = "Please select a booking date from the list above!";
+            Session["AppointmentID"] = -1;
+            Response.Redirect("Book Appointment.aspx");
         }
         else
         {
-            //send user to booking appointment page
-            Response.Redirect("Booking Appointment.aspx");
+            lblError.Text = "please select a record";
+        }
+          
 
-        } 
+        ////if statement to test if user has selected a date from the list
+        //if (lstBoxAppointmentDates.SelectedIndex == -1)
+        //{
+        //    //error message shown to user
+        //    lblError.Text = "Please select a booking date from the list above!";
+        //}
+        //else
+        //{
+        //    //send user to booking appointment page
+        //    Response.Redirect("Book Appointment.aspx");
+
+        //} 
     }
     protected void btnFilter_Click(object sender, EventArgs e)
     {

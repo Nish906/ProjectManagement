@@ -34,10 +34,10 @@ namespace M.U.N_System_BackEnd
             //DateTime dt = DateTime.ParseExact(val, "dd.M.yyyy hh:mm:ss", null);
            // System.Data.SqlTypes.SqlDateTime dtSql = System.Data.SqlTypes.SqlDateTime.Parse(dt.ToString("dd/MM/yyyy"));
 
-            if (txtAppointmentDate.Text == "")
-            {
-                lblError.Text = "Please enter the date into text box above";
-            }
+            //if (txtAppointmentDate.Text == "")
+            //{
+            //    lblError.Text = "Please enter the date into text box above";
+            //}
 
             //Field = DateTime.Parse(txtAppointmentDate.Text);
 
@@ -79,6 +79,22 @@ namespace M.U.N_System_BackEnd
         {
             //close form
             Close();
+        }
+
+        void Add()
+        {
+            MyClassLibrary.clsAppointmentCollection AppointmentBook = new clsAppointmentCollection();
+            Boolean OK = AppointmentBook.ThisAppointment.ValidAppointmentDate(txtAppointmentDate);
+            if (OK == true)
+            {
+                AppointmentBook.ThisAppointment.AppointmentDate = Convert.ToDateTime(txtAppointmentDate);
+                AppointmentBook.Add;
+
+            }
+            else
+            {
+                lblError.Text = "Error";
+            }
         }
     }
 }

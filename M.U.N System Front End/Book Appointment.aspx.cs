@@ -21,6 +21,7 @@ public partial class Book_Appointment : System.Web.UI.Page
         }
         else
         {
+
             //send user to confirmation page
             Response.Redirect("Book Appointment Confirmation.aspx"); 
 
@@ -35,5 +36,25 @@ public partial class Book_Appointment : System.Web.UI.Page
         txtAppointmentDetails.Text = "";
         //label showing what has been done
         lblError.Text = "Booking details have been cleared";
+    }
+
+    void AddAppointmentBooking()
+    {
+        MyClassLibrary.clsAppointmentCollection AppointmentBook = new MyClassLibrary.clsAppointmentCollection();
+        Boolean OK = AppointmentBook.ThisAppointment.ValidAppointmentDetailMin(txtAppointmentDetails.Text);
+        if (OK == true)
+        {
+            AppointmentBook.ThisAppointment.FirstName = txtFirstName.Text;
+            AppointmentBook.ThisAppointment.LastName = txtLastName.Text;
+            AppointmentBook.ThisAppointment.EmailAddress = txtEmail.Text;
+            AppointmentBook.ThisAppointment.AppointmentDetails = txtAppointmentDetails.Text;
+
+            AppointmentBook.AddBooking();
+        }
+
+        else
+        {
+            lblError.Text = "These was a problem";
+        }
     }
 }
