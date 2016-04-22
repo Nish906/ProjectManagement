@@ -153,7 +153,7 @@ namespace EmailTesting
             //Boolean variable to store the result of the validation
             Boolean Found = false;
             //Create some test data to assign to the property
-            Int32 EmailNo = 9;
+            Int32 EmailNo = 2;
             //Invoke the method
             Found = AnEmail.Find(EmailNo);
             //Test to see that the result is true
@@ -169,11 +169,11 @@ namespace EmailTesting
             //Boolean variable to record if data is OK
             Boolean OK = true;
             //Create some test data to assign to the property
-            Int32 EmailID = 9;
+            Int32 EmailID = 2;
             //Invoke the method
             Found = AnEmail.Find(EmailID);
             //Check the Email ID
-            if (AnEmail.EmailID != 9)
+            if (AnEmail.EmailID != 2)
             {
                 OK = false;
             }
