@@ -130,7 +130,7 @@
             this.emailAddressDataGridViewTextBoxColumn,
             this.appointmentDetailsDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblBookedAppointmentsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 130);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 129);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(454, 150);
             this.dataGridView1.TabIndex = 36;
