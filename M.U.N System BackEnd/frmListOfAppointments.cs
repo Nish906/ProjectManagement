@@ -35,6 +35,8 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblBookedAppointments' table. You can move, or remove it, as needed.
+            this.tblBookedAppointmentsTableAdapter.Fill(this.ourDatabaseDataSet.tblBookedAppointments);
 
         }
 

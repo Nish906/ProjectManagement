@@ -37,6 +37,18 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.ourDatabaseDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
+            this.tblBookedAppointmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblBookedAppointmentsTableAdapter = new M.U.N_System_BackEnd.OurDatabaseDataSetTableAdapters.tblBookedAppointmentsTableAdapter();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appointmentDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBookedAppointmentsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
@@ -108,19 +120,67 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-             
+            // dataGridView1
             // 
-            this.ourDatabaseDataSet3BindingSource.Position = 0;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.emailAddressDataGridViewTextBoxColumn,
+            this.appointmentDetailsDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblBookedAppointmentsBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 130);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(454, 150);
+            this.dataGridView1.TabIndex = 36;
             // 
-            
+            // ourDatabaseDataSet
             // 
+            this.ourDatabaseDataSet.DataSetName = "OurDatabaseDataSet";
+            this.ourDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblBookedAppointmentsBindingSource
+            // 
+            this.tblBookedAppointmentsBindingSource.DataMember = "tblBookedAppointments";
+            this.tblBookedAppointmentsBindingSource.DataSource = this.ourDatabaseDataSet;
+            // 
+            // tblBookedAppointmentsTableAdapter
+            // 
+            this.tblBookedAppointmentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // emailAddressDataGridViewTextBoxColumn
+            // 
+            this.emailAddressDataGridViewTextBoxColumn.DataPropertyName = "EmailAddress";
+            this.emailAddressDataGridViewTextBoxColumn.HeaderText = "EmailAddress";
+            this.emailAddressDataGridViewTextBoxColumn.Name = "emailAddressDataGridViewTextBoxColumn";
+            // 
+            // appointmentDetailsDataGridViewTextBoxColumn
+            // 
+            this.appointmentDetailsDataGridViewTextBoxColumn.DataPropertyName = "AppointmentDetails";
+            this.appointmentDetailsDataGridViewTextBoxColumn.HeaderText = "AppointmentDetails";
+            this.appointmentDetailsDataGridViewTextBoxColumn.Name = "appointmentDetailsDataGridViewTextBoxColumn";
             // 
             // frmListOfAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(509, 436);
+            this.ClientSize = new System.Drawing.Size(574, 436);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.lblListOfAppointments);
@@ -132,7 +192,9 @@
             this.Text = "frmListOfAppointment";
             this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3BindingSource)).EndInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBookedAppointmentsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +210,14 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.BindingSource ourDatabaseDataSet3BindingSource;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private OurDatabaseDataSet ourDatabaseDataSet;
+        private System.Windows.Forms.BindingSource tblBookedAppointmentsBindingSource;
+        private OurDatabaseDataSetTableAdapters.tblBookedAppointmentsTableAdapter tblBookedAppointmentsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn appointmentDetailsDataGridViewTextBoxColumn;
         
     }
 }
