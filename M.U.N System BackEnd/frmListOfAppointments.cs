@@ -18,14 +18,6 @@ namespace M.U.N_System_BackEnd
             InitializeComponent();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            //create instance of form
-            frmUpdateAppointment UpdateAppointment = new frmUpdateAppointment();
-            //show form
-            UpdateAppointment.Show();
-        }
-
         private void frmListOfAppointments_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'appointment_ListOfAppointments.tblAppointments' table. You can move, or remove it, as needed.
@@ -33,12 +25,25 @@ namespace M.U.N_System_BackEnd
 
         }
 
-        private void btnAdd_Click_1(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             //create instance of form
             frmAddAppointments AddAppointments = new frmAddAppointments();
             //show form
             AddAppointments.Show();
+        }
+
+        private void frmListOfAppointments_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            //create instance of form
+            frmUpdateAppointment UpdateAppointment = new frmUpdateAppointment();
+            //show form
+            UpdateAppointment.Show();
         }
 
         private void btndelete_Click_1(object sender, EventArgs e)
@@ -78,11 +83,5 @@ namespace M.U.N_System_BackEnd
             Close();
         }
 
-        private void frmListOfAppointments_Load_1(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet3.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter2.Fill(this.ourDatabaseDataSet3.tblAppointment);
-
-        }
     }
 }
