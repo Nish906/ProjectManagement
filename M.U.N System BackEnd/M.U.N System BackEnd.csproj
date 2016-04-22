@@ -100,6 +100,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OurDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OurDatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddAppointments.resx">
@@ -139,6 +149,28 @@
     </None>
     <None Include="OurDatabaseDataSet.xss">
       <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet1.xsc">
+      <DependentUpon>OurDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSet1.xss">
+      <DependentUpon>OurDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet2.xsc">
+      <DependentUpon>OurDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSet2.xss">
+      <DependentUpon>OurDatabaseDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
