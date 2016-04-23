@@ -9,6 +9,8 @@ namespace MyClassLibrary
     {
         //Private data member for the list
         List<clsEmail> emailList = new List<clsEmail>();
+        //Private data memeber for this email
+        clsEmail thisEmail = new clsEmail();
 
         //Public property for the email list
         public List<clsEmail> EmailList
@@ -40,5 +42,16 @@ namespace MyClassLibrary
         }
 
         public clsEmail ThisEmail { get; set; }
+
+        public void Delete()
+        {
+            //Deletes the record pointed to by thisEmail
+            //Connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //Set the parameter for the stored procedure
+            DB.AddParameter("@EmailID", thisEmail.EmailID);
+            //Execute the stored procedure
+            DB.Execute("sproc_tblEmail_Delete");
+        }
     }
 }

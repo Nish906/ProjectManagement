@@ -98,6 +98,34 @@ namespace EmailTesting
             Assert.AreEqual(AllEmails.Count, TestList.Count);
         }
 
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //Create an instance of the class we want to create
+            clsEmailCollection AllEmails = new clsEmailCollection();
+            //Create the item of the test data
+            clsEmail TestItem = new clsEmail();
+            //Var to store primary key
+            Int32 PrimaryKey = 0;
+            //Set properties
+            TestItem.EmailDate = DateTime.Now.Date;
+            TestItem.EmailAddress = "joe_bloggs@mail.com";
+            TestItem.EmailField = "Hello, can you...";
+            TestItem.EmailSubject = "Meetings";
+            TestItem.EmailID = 1;
+            //Set the primary key of the test data
+            AllEmails.ThisEmail = TestItem;
+            //Set the primary key of the test data
+            TestItem.EmailID = PrimaryKey;
+            //Find the record
+            AllEmails.ThisEmail.Find(PrimaryKey);
+            //Delete the record
+            AllEmails.Delete();
+            //Now find the record
+            Boolean Found = AllEmails.ThisEmail.Find(PrimaryKey);
+            //Test to see that the record was not found
+            Assert.IsFalse(Found);
+        }
 
         /*[TestMethod] 
         public void AllEmailsOK()
