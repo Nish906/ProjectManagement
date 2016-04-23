@@ -64,7 +64,11 @@ public partial class Register : System.Web.UI.Page
         //Add the new record
         Add();
         //send to page confermation 
-        Response.Redirect("Confirmation.aspx");
+        Response.Redirect("RegisterConfirmation.aspx");
+
+    }
+    protected void txtFirstName_TextChanged(object sender, EventArgs e)
+    {
 
     }
 }

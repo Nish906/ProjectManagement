@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace ClassLibrary
+namespace MyClassLibrary
 {
     public class clsCustomerCollection
     {

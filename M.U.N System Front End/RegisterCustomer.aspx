@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Register" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="RegisterCustomer.aspx.cs" Inherits="Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -13,7 +13,7 @@
      <p>
          <asp:Label ID="lblFirstName" runat="server" Text="*First Name:"></asp:Label>
          <br />
-         <asp:TextBox ID="txtFirstName" runat="server" Width="171px"></asp:TextBox>
+         <asp:TextBox ID="txtFirstName" runat="server" Width="171px" OnTextChanged="txtFirstName_TextChanged"></asp:TextBox>
      </p>
 <p>
         <asp:Label ID="lblLastName" runat="server" Text="*Last Name:"></asp:Label>

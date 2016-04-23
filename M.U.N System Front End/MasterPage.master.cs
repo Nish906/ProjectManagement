@@ -78,7 +78,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     }
     protected void btnRegister_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Register.aspx");
+        Response.Redirect("RegisterCustomer.aspx");
     }
     protected void btnHome_Click(object sender, EventArgs e)
     {
