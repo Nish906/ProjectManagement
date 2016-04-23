@@ -77,6 +77,24 @@
     <Compile Include="frmBookAppointment.Designer.cs">
       <DependentUpon>frmBookAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContacts.Designer.cs">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefault.Designer.cs">
+      <DependentUpon>frmDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailsMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailsMain.Designer.cs">
+      <DependentUpon>frmEmailsMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListOfAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,12 @@
     </Compile>
     <Compile Include="frmReviewDetails.Designer.cs">
       <DependentUpon>frmReviewDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendEmail.Designer.cs">
+      <DependentUpon>frmSendEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateAppointment.cs">
       <SubType>Form</SubType>
@@ -111,11 +135,23 @@
     <EmbeddedResource Include="frmBookAppointment.resx">
       <DependentUpon>frmBookAppointment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmContacts.resx">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefault.resx">
+      <DependentUpon>frmDefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailsMain.resx">
+      <DependentUpon>frmEmailsMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListOfAppointments.resx">
       <DependentUpon>frmListOfAppointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReviewDetails.resx">
       <DependentUpon>frmReviewDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendEmail.resx">
+      <DependentUpon>frmSendEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAppointment.resx">
       <DependentUpon>frmUpdateAppointment.cs</DependentUpon>

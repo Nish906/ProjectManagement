@@ -53,6 +53,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstAppointmentCollection.cs" />
     <Compile Include="tstAppointments.cs" />
+    <Compile Include="tstEmail.cs" />
+    <Compile Include="tstEmailCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyClassLibrary\MyClassLibrary.csproj">

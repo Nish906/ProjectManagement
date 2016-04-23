@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EmailBackEnd
 {
-    public partial class Form1 : Form
+    public partial class frmContacts : Form
     {
-        public Form1()
+        public frmContacts()
         {
             InitializeComponent();
         }
