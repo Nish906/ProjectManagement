@@ -63,7 +63,7 @@ namespace Customer_Test
             //Boolean variable to store the result of the validation
             Boolean OK = true;
             //Create some test data to use with the method
-            Int32 CustomerID = 52;
+            Int32 CustomerID = 1;
             //Invoke the method
             Found = ACustomer.Find(CustomerID);
             //check if the customer id 
@@ -85,7 +85,7 @@ namespace Customer_Test
             //Boolean variable to store the result of the validation
             Boolean OK = true;
             //Create some test data to use with the method
-            Int32 CustomerID = 52;
+            Int32 CustomerID = 1;
             //Invoke the method
             Found = ACustomer.Find(CustomerID);
             //check if the customer id 
@@ -131,7 +131,7 @@ namespace Customer_Test
             //Boolean variable to store the result of the validation
             Boolean OK = true;
             //Create some test data to use with the method
-            Int32 CustomerID = 52;
+            Int32 CustomerID = 1;
             //Invoke the method
             Found = ACustomer.Find(CustomerID);
             //check if the customer id 
