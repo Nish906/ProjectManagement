@@ -31,7 +31,7 @@ namespace M.U.N_System_BackEnd
 
         private void FindCustomer_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
