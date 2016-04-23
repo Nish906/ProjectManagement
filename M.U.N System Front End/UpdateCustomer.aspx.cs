@@ -10,13 +10,13 @@ public partial class RegisterCustomer : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //dummy data inserted 
-        txtFirstName.Text = "Jhon";
-        txtLastName.Text = "Smith";
-        txtEmailAddress.Text = "John.s@hotmail.co.uk";
+        txtFirstName.Text = "Mohammed";
+        txtLastName.Text = "Kharodia";
+        txtEmailAddress.Text = "kharodia_14@hotmail.co.uk";
         txtPhoneNumber.Text = "07568469452";
         txtDateOfBirth.Text = "12/05/1991";
         DDLGender.Text = "Male";
-        txtAddress.Text = "54 Rose Road";
+        txtAddress.Text = "1 Rose Road";
         txtCity.Text = "Leicester";
         txtPostcode.Text = "LE4 1FN";
 
@@ -53,6 +53,10 @@ public partial class RegisterCustomer : System.Web.UI.Page
         }
     }
     protected void txtEmailAddress_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void DDLGender_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }

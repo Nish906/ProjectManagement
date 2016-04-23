@@ -42,25 +42,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnCustomerDetails = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.lblDateOfBirth = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.txtPhoneNo = new System.Windows.Forms.TextBox();
             this.lblEmailAddress = new System.Windows.Forms.Label();
             this.txtEmailAdd = new System.Windows.Forms.TextBox();
             this.lblCity = new System.Windows.Forms.Label();
             this.txtCity = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbllPostCodes = new System.Windows.Forms.Label();
             this.txtPostCode = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblEmailAddresss = new System.Windows.Forms.Label();
+            this.txtEmailAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtLastNames = new System.Windows.Forms.TextBox();
+            this.txtFirstNames = new System.Windows.Forms.TextBox();
+            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblFirstNames = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblError
@@ -178,7 +178,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(145, 19);
+            this.label2.Location = new System.Drawing.Point(141, 51);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(283, 47);
@@ -195,37 +195,30 @@
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnCustomerDetails
+            // btnRegister
             // 
-            this.btnCustomerDetails.Location = new System.Drawing.Point(145, 982);
-            this.btnCustomerDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCustomerDetails.Name = "btnCustomerDetails";
-            this.btnCustomerDetails.Size = new System.Drawing.Size(186, 35);
-            this.btnCustomerDetails.TabIndex = 70;
-            this.btnCustomerDetails.Text = "Add Customer Details";
-            this.btnCustomerDetails.UseVisualStyleBackColor = true;
+            this.btnRegister.Location = new System.Drawing.Point(145, 880);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(186, 35);
+            this.btnRegister.TabIndex = 70;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // lblDateOfBirth
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(150, 531);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 20);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "D.O.B";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(150, 559);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(14);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 68;
+            this.lblDateOfBirth.AutoSize = true;
+            this.lblDateOfBirth.Location = new System.Drawing.Point(145, 465);
+            this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDateOfBirth.Name = "lblDateOfBirth";
+            this.lblDateOfBirth.Size = new System.Drawing.Size(102, 20);
+            this.lblDateOfBirth.TabIndex = 69;
+            this.lblDateOfBirth.Text = "Date Of Birth";
             // 
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(150, 913);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(145, 388);
             this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(115, 20);
@@ -234,7 +227,7 @@
             // 
             // txtPhoneNo
             // 
-            this.txtPhoneNo.Location = new System.Drawing.Point(150, 942);
+            this.txtPhoneNo.Location = new System.Drawing.Point(145, 423);
             this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(148, 26);
@@ -243,7 +236,7 @@
             // lblEmailAddress
             // 
             this.lblEmailAddress.AutoSize = true;
-            this.lblEmailAddress.Location = new System.Drawing.Point(145, 840);
+            this.lblEmailAddress.Location = new System.Drawing.Point(145, 627);
             this.lblEmailAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmailAddress.Name = "lblEmailAddress";
             this.lblEmailAddress.Size = new System.Drawing.Size(111, 20);
@@ -252,7 +245,7 @@
             // 
             // txtEmailAdd
             // 
-            this.txtEmailAdd.Location = new System.Drawing.Point(145, 870);
+            this.txtEmailAdd.Location = new System.Drawing.Point(145, 661);
             this.txtEmailAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmailAdd.Name = "txtEmailAdd";
             this.txtEmailAdd.Size = new System.Drawing.Size(148, 26);
@@ -261,7 +254,7 @@
             // lblCity
             // 
             this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(150, 467);
+            this.lblCity.Location = new System.Drawing.Point(145, 701);
             this.lblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(35, 20);
@@ -270,47 +263,47 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(150, 496);
+            this.txtCity.Location = new System.Drawing.Point(145, 737);
             this.txtCity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(148, 26);
             this.txtCity.TabIndex = 62;
             // 
-            // label3
+            // lbllPostCodes
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 391);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
-            this.label3.TabIndex = 61;
-            this.label3.Text = "Post Code";
+            this.lbllPostCodes.AutoSize = true;
+            this.lbllPostCodes.Location = new System.Drawing.Point(141, 780);
+            this.lbllPostCodes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbllPostCodes.Name = "lbllPostCodes";
+            this.lbllPostCodes.Size = new System.Drawing.Size(83, 20);
+            this.lbllPostCodes.TabIndex = 61;
+            this.lbllPostCodes.Text = "Post Code";
             // 
             // txtPostCode
             // 
-            this.txtPostCode.Location = new System.Drawing.Point(145, 420);
+            this.txtPostCode.Location = new System.Drawing.Point(145, 817);
             this.txtPostCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPostCode.Name = "txtPostCode";
             this.txtPostCode.Size = new System.Drawing.Size(148, 26);
             this.txtPostCode.TabIndex = 60;
             // 
-            // label4
+            // lblEmailAddresss
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 307);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 20);
-            this.label4.TabIndex = 59;
-            this.label4.Text = "Address";
+            this.lblEmailAddresss.AutoSize = true;
+            this.lblEmailAddresss.Location = new System.Drawing.Point(145, 307);
+            this.lblEmailAddresss.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmailAddresss.Name = "lblEmailAddresss";
+            this.lblEmailAddresss.Size = new System.Drawing.Size(111, 20);
+            this.lblEmailAddresss.TabIndex = 59;
+            this.lblEmailAddresss.Text = "Email Address";
             // 
-            // textBox1
+            // txtEmailAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 336);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 58;
+            this.txtEmailAddress.Location = new System.Drawing.Point(145, 343);
+            this.txtEmailAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(148, 26);
+            this.txtEmailAddress.TabIndex = 58;
             // 
             // label5
             // 
@@ -322,77 +315,88 @@
             this.label5.TabIndex = 57;
             this.label5.Text = "Last Name";
             // 
-            // textBox2
+            // txtLastNames
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 268);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 56;
+            this.txtLastNames.Location = new System.Drawing.Point(145, 268);
+            this.txtLastNames.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLastNames.Name = "txtLastNames";
+            this.txtLastNames.Size = new System.Drawing.Size(148, 26);
+            this.txtLastNames.TabIndex = 56;
             // 
-            // label6
+            // txtFirstNames
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(145, 174);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 20);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "FirstName";
+            this.txtFirstNames.Location = new System.Drawing.Point(145, 203);
+            this.txtFirstNames.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFirstNames.Name = "txtFirstNames";
+            this.txtFirstNames.Size = new System.Drawing.Size(148, 26);
+            this.txtFirstNames.TabIndex = 54;
             // 
-            // textBox3
+            // txtDateOfBirth
             // 
-            this.textBox3.Location = new System.Drawing.Point(145, 203);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 54;
+            this.txtDateOfBirth.Location = new System.Drawing.Point(145, 499);
+            this.txtDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.Size = new System.Drawing.Size(148, 26);
+            this.txtDateOfBirth.TabIndex = 74;
             // 
-            // label7
+            // lblGender
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(145, 102);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 20);
-            this.label7.TabIndex = 53;
-            this.label7.Text = "CustomerID";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Location = new System.Drawing.Point(141, 542);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(63, 20);
+            this.lblGender.TabIndex = 75;
+            this.lblGender.Text = "Gender";
             // 
-            // textBox4
+            // lblFirstNames
             // 
-            this.textBox4.Location = new System.Drawing.Point(145, 131);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 52;
+            this.lblFirstNames.AutoSize = true;
+            this.lblFirstNames.Location = new System.Drawing.Point(145, 178);
+            this.lblFirstNames.Name = "lblFirstNames";
+            this.lblFirstNames.Size = new System.Drawing.Size(86, 20);
+            this.lblFirstNames.TabIndex = 76;
+            this.lblFirstNames.Text = "First Name";
             // 
-            // AddCustomer
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox1.Location = new System.Drawing.Point(145, 574);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.TabIndex = 77;
+            // 
+            // frmAddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(644, 1098);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblFirstNames);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.txtDateOfBirth);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnCustomerDetails);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.lblDateOfBirth);
             this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.lblEmailAddress);
             this.Controls.Add(this.txtEmailAdd);
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.txtCity);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbllPostCodes);
             this.Controls.Add(this.txtPostCode);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblEmailAddresss);
+            this.Controls.Add(this.txtEmailAddress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtLastNames);
+            this.Controls.Add(this.txtFirstNames);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblCustomer);
             this.Controls.Add(this.lblPostCode);
@@ -404,7 +408,7 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.txtCustomerID);
-            this.Name = "AddCustomer";
+            this.Name = "frmAddCustomer";
             this.Text = "AddCustomer";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             this.ResumeLayout(false);
@@ -428,24 +432,24 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnCustomerDetails;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label lblDateOfBirth;
         private System.Windows.Forms.Label lblPhoneNumber;
         private System.Windows.Forms.TextBox txtPhoneNo;
         private System.Windows.Forms.Label lblEmailAddress;
         private System.Windows.Forms.TextBox txtEmailAdd;
         private System.Windows.Forms.Label lblCity;
         private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbllPostCodes;
         private System.Windows.Forms.TextBox txtPostCode;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblEmailAddresss;
+        private System.Windows.Forms.TextBox txtEmailAddress;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtLastNames;
+        private System.Windows.Forms.TextBox txtFirstNames;
+        private System.Windows.Forms.TextBox txtDateOfBirth;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblFirstNames;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
