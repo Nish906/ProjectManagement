@@ -15,6 +15,12 @@ namespace M.U.N_System_BackEnd
 {
     public partial class frmAddAppointments : Form
     {
+        //this checks if the user is editing an item
+        public Int32 EditCounter = 0;
+
+        //this checks if the user has a selected index
+        public Int32 selectedIndex = 0;
+
         public frmAddAppointments()
         {
             InitializeComponent();
@@ -27,26 +33,54 @@ namespace M.U.N_System_BackEnd
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string constring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=..\\App_Data\\OurDatabase.mdf;Integrated Security=True;Connect Timeout=30";
-            string Querry="insert into OurDatabase.tblAppointment(AppointmentID, AppointmentDate) values ('"+this.txtAppointmentID.Text+"','"+this.txtAppointmentDate.Text+"') ;";
-            SqlConnection conDatabase = new SqlConnection(constring); 
-            SqlCommand cmdDatabase = new SqlCommand(Querry, conDatabase);
-            SqlDataReader myReader;
-            try
-            {
-                conDatabase.Open();
-                myReader = cmdDatabase.ExecuteReader();
-                MessageBox.Show("Saved");
-                while (myReader.Read())
-                {
+            DateTime AppointmentDate;
 
-                }
+            AppointmentDate = Convert.ToDateTime(txtAppointmentDate.Text);
+            //if (AppointmentDate == "")
+            //{
+            //    lblError.Text = "Enter Date";
+            //}
 
-            }
-            catch (Exception ex)
+            //else
+            //{
+
+
+            if (EditCounter == 1)
             {
-                MessageBox.Show(ex.Message);
+                frmListOfAppointments Appointments = new frmListOfAppointments();
+                Appointments.Finish(AppointmentDate, selectedIndex);
+                Appointments.Show();
+                this.Close();
             }
+
+            else
+            {
+                frmListOfAppointments Appointments = new frmListOfAppointments();
+                Appointments.AddNewAppointment(AppointmentDate);
+                Appointments.Show();
+                this.Close();
+            }
+
+            //string constring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=..\\App_Data\\OurDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            //string Querry="insert into OurDatabase.tblAppointment(AppointmentID, AppointmentDate) values ('"+this.txtAppointmentID.Text+"','"+this.txtAppointmentDate.Text+"') ;";
+            //SqlConnection conDatabase = new SqlConnection(constring); 
+            //SqlCommand cmdDatabase = new SqlCommand(Querry, conDatabase);
+            //SqlDataReader myReader;
+            //try
+            //{
+            //    conDatabase.Open();
+            //    myReader = cmdDatabase.ExecuteReader();
+            //    MessageBox.Show("Saved");
+            //    while (myReader.Read())
+            //    {
+
+            //    }
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
            // DateTime val = Convert.ToDateTime(txtAppointmentDate.Text);
 

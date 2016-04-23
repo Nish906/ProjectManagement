@@ -34,7 +34,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.txtAppointmentID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblAddAppointment
@@ -94,20 +93,12 @@
             this.lblError.Size = new System.Drawing.Size(0, 16);
             this.lblError.TabIndex = 7;
             // 
-            // txtAppointmentID
-            // 
-            this.txtAppointmentID.Location = new System.Drawing.Point(192, 63);
-            this.txtAppointmentID.Name = "txtAppointmentID";
-            this.txtAppointmentID.Size = new System.Drawing.Size(100, 20);
-            this.txtAppointmentID.TabIndex = 8;
-            // 
             // frmAddAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(350, 246);
-            this.Controls.Add(this.txtAppointmentID);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAdd);
@@ -130,6 +121,5 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.TextBox txtAppointmentID;
     }
 }

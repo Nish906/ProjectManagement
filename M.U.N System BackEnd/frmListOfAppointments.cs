@@ -40,8 +40,9 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblBookedAppointments' table. You can move, or remove it, as needed.
-            this.tblBookedAppointmentsTableAdapter.Fill(this.ourDatabaseDataSet.tblBookedAppointments);
+            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointmentDates.tblAppointment' table. You can move, or remove it, as needed.
+            this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSetAppointmentDates.tblAppointment);
+
 
         }
 
@@ -90,5 +91,19 @@ namespace M.U.N_System_BackEnd
             Close();
         }
 
+
+        public void Finish(DateTime AppointmentDate, int SelectedIndex)
+        {
+            lstAppointments.Items.RemoveAt(SelectedIndex);
+            string EditListBox = "AppointmentDate" + AppointmentDate;
+            lstAppointments.Items.Add(EditListBox);
+        }
+
+        public void AddNewAppointment(DateTime AppointmentDate)
+        {
+            clsDataConnection DB = new clsDataConnection();
+            DB.AddParameter("AppointmentDate", AppointmentDate);
+            DB.Execute("sproc_tblAppointment_Insert");
+        }
     }
 }

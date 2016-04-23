@@ -16,7 +16,7 @@ namespace M.U.N_System_BackEnd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDefault());
+            Application.Run(new frmAppointments());
         }
     }
 }

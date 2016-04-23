@@ -83,12 +83,6 @@
     <Compile Include="frmContacts.Designer.cs">
       <DependentUpon>frmContacts.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDefault.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDefault.Designer.cs">
-      <DependentUpon>frmDefault.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmEmailsMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,10 +113,10 @@
     <Compile Include="frmUpdateAppointment.Designer.cs">
       <DependentUpon>frmUpdateAppointment.cs</DependentUpon>
     </Compile>
-    <Compile Include="OurDatabaseDataSet.Designer.cs">
+    <Compile Include="OurDatabaseDataSetAppointmentDates.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmContacts.resx">
       <DependentUpon>frmContacts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDefault.resx">
-      <DependentUpon>frmDefault.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmailsMain.resx">
       <DependentUpon>frmEmailsMain.cs</DependentUpon>
@@ -165,16 +156,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="OurDatabaseDataSet.xsc">
-      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    <None Include="OurDatabaseDataSetAppointmentDates.xsc">
+      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
     </None>
-    <None Include="OurDatabaseDataSet.xsd">
+    <None Include="OurDatabaseDataSetAppointmentDates.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>OurDatabaseDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>OurDatabaseDataSetAppointmentDates.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="OurDatabaseDataSet.xss">
-      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    <None Include="OurDatabaseDataSetAppointmentDates.xss">
+      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
