@@ -30,35 +30,50 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnSendEmail = new System.Windows.Forms.Button();
+            this.btnContacts = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(12, 20);
+            this.lblTitle.Location = new System.Drawing.Point(18, 31);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(167, 55);
+            this.lblTitle.Size = new System.Drawing.Size(253, 82);
             this.lblTitle.TabIndex = 10;
             this.lblTitle.Text = "Emails";
             // 
             // btnSendEmail
             // 
-            this.btnSendEmail.Location = new System.Drawing.Point(385, 20);
+            this.btnSendEmail.Location = new System.Drawing.Point(745, 31);
+            this.btnSendEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSendEmail.Name = "btnSendEmail";
-            this.btnSendEmail.Size = new System.Drawing.Size(103, 41);
+            this.btnSendEmail.Size = new System.Drawing.Size(182, 82);
             this.btnSendEmail.TabIndex = 11;
             this.btnSendEmail.Text = "Send Email";
             this.btnSendEmail.UseVisualStyleBackColor = true;
             this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
             // 
+            // btnContacts
+            // 
+            this.btnContacts.Location = new System.Drawing.Point(544, 31);
+            this.btnContacts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnContacts.Name = "btnContacts";
+            this.btnContacts.Size = new System.Drawing.Size(182, 82);
+            this.btnContacts.TabIndex = 12;
+            this.btnContacts.Text = "Contacts";
+            this.btnContacts.UseVisualStyleBackColor = true;
+            // 
             // frmEmails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 261);
+            this.ClientSize = new System.Drawing.Size(940, 721);
+            this.Controls.Add(this.btnContacts);
             this.Controls.Add(this.btnSendEmail);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmEmails";
             this.Text = "frmEmails";
             this.ResumeLayout(false);
@@ -70,5 +85,6 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnSendEmail;
+        private System.Windows.Forms.Button btnContacts;
     }
 }
