@@ -1,6 +1,6 @@
-﻿namespace ScreenDesignsWindowsForm
+﻿namespace M.U.N_System_BackEnd
 {
-    partial class FilterPayment
+    partial class frmFilterPayment
     {
         /// <summary>
         /// Required designer variable.

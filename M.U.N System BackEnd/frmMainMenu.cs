@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ScreenDesignsWindowsForm
+namespace M.U.N_System_BackEnd
 {
     public partial class MainMenu : Form
     {
@@ -20,7 +20,7 @@ namespace ScreenDesignsWindowsForm
         private void button3_Click(object sender, EventArgs e)
         {
             //Click on here to go to all buttons to link to the customer information
-            MainMenuForCustomer Customer = new MainMenuForCustomer();
+            frmMainMenuForCustomer Customer = new frmMainMenuForCustomer();
             Customer.Show();
         }
 

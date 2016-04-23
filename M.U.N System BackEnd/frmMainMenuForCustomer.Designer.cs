@@ -1,6 +1,6 @@
-﻿namespace ScreenDesignsWindowsForm
+﻿namespace M.U.N_System_BackEnd
 {
-    partial class MainMenuForCustomer
+    partial class frmMainMenuForCustomer
     {
         /// <summary>
         /// Required designer variable.

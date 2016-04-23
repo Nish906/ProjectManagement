@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ScreenDesignsWindowsForm
+namespace M.U.N_System_BackEnd
 {
-    public partial class FindCustomer : Form
+    public partial class frmFindCustomer : Form
     {
-        public FindCustomer()
+        public frmFindCustomer()
         {
             InitializeComponent();
         }

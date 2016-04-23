@@ -131,11 +131,11 @@
     <Compile Include="frmSendEmail.Designer.cs">
       <DependentUpon>frmSendEmail.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUpdateAppointment.cs">
+    <Compile Include="UpdateAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUpdateAppointment.Designer.cs">
-      <DependentUpon>frmUpdateAppointment.cs</DependentUpon>
+    <Compile Include="UpdateAppointment.Designer.cs">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
@@ -198,8 +198,8 @@
     <EmbeddedResource Include="frmSendEmail.resx">
       <DependentUpon>frmSendEmail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateAppointment.resx">
-      <DependentUpon>frmUpdateAppointment.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateAppointment.resx">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>

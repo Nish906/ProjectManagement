@@ -39,9 +39,10 @@
             // 
             // btncClose
             // 
-            this.btncClose.Location = new System.Drawing.Point(200, 203);
+            this.btncClose.Location = new System.Drawing.Point(300, 312);
+            this.btncClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btncClose.Name = "btncClose";
-            this.btncClose.Size = new System.Drawing.Size(114, 29);
+            this.btncClose.Size = new System.Drawing.Size(171, 45);
             this.btncClose.TabIndex = 1;
             this.btncClose.Text = "Close";
             this.btncClose.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(42, 203);
+            this.btnUpdate.Location = new System.Drawing.Point(63, 312);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(114, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(171, 45);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Update Appointment";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -61,33 +63,37 @@
             // 
             this.lblUpdateAppointment.AutoSize = true;
             this.lblUpdateAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateAppointment.Location = new System.Drawing.Point(77, 51);
+            this.lblUpdateAppointment.Location = new System.Drawing.Point(116, 78);
+            this.lblUpdateAppointment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpdateAppointment.Name = "lblUpdateAppointment";
-            this.lblUpdateAppointment.Size = new System.Drawing.Size(210, 24);
+            this.lblUpdateAppointment.Size = new System.Drawing.Size(313, 33);
             this.lblUpdateAppointment.TabIndex = 7;
             this.lblUpdateAppointment.Text = "Update Appointments";
             // 
             // txtAppointmentTime
             // 
-            this.txtAppointmentTime.Location = new System.Drawing.Point(200, 155);
+            this.txtAppointmentTime.Location = new System.Drawing.Point(300, 238);
+            this.txtAppointmentTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAppointmentTime.Name = "txtAppointmentTime";
-            this.txtAppointmentTime.Size = new System.Drawing.Size(100, 20);
+            this.txtAppointmentTime.Size = new System.Drawing.Size(148, 26);
             this.txtAppointmentTime.TabIndex = 11;
             // 
             // txtAppointmentDate
             // 
-            this.txtAppointmentDate.Location = new System.Drawing.Point(200, 100);
+            this.txtAppointmentDate.Location = new System.Drawing.Point(300, 154);
+            this.txtAppointmentDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAppointmentDate.Name = "txtAppointmentDate";
-            this.txtAppointmentDate.Size = new System.Drawing.Size(100, 20);
+            this.txtAppointmentDate.Size = new System.Drawing.Size(148, 26);
             this.txtAppointmentDate.TabIndex = 10;
             // 
             // lblAppointmentTime
             // 
             this.lblAppointmentTime.AutoSize = true;
             this.lblAppointmentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppointmentTime.Location = new System.Drawing.Point(51, 156);
+            this.lblAppointmentTime.Location = new System.Drawing.Point(76, 240);
+            this.lblAppointmentTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppointmentTime.Name = "lblAppointmentTime";
-            this.lblAppointmentTime.Size = new System.Drawing.Size(117, 16);
+            this.lblAppointmentTime.Size = new System.Drawing.Size(171, 25);
             this.lblAppointmentTime.TabIndex = 9;
             this.lblAppointmentTime.Text = "Appointment Time";
             // 
@@ -95,18 +101,19 @@
             // 
             this.lblAppointmentDate.AutoSize = true;
             this.lblAppointmentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppointmentDate.Location = new System.Drawing.Point(51, 101);
+            this.lblAppointmentDate.Location = new System.Drawing.Point(76, 155);
+            this.lblAppointmentDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppointmentDate.Name = "lblAppointmentDate";
-            this.lblAppointmentDate.Size = new System.Drawing.Size(115, 16);
+            this.lblAppointmentDate.Size = new System.Drawing.Size(168, 25);
             this.lblAppointmentDate.TabIndex = 8;
             this.lblAppointmentDate.Text = "Appointment Date";
             // 
             // frmUpdateAppointment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(356, 262);
+            this.ClientSize = new System.Drawing.Size(534, 403);
             this.Controls.Add(this.txtAppointmentTime);
             this.Controls.Add(this.txtAppointmentDate);
             this.Controls.Add(this.lblAppointmentTime);
@@ -114,8 +121,10 @@
             this.Controls.Add(this.lblUpdateAppointment);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btncClose);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmUpdateAppointment";
             this.Text = "frmUpdateAppointment";
+            this.Load += new System.EventHandler(this.frmUpdateAppointment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

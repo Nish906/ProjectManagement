@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ScreenDesignsWindowsForm
+namespace M.U.N_System_BackEnd
 {
-    public partial class AddCustomer : Form
+    public partial class frmAddCustomer : Form
     {
-        public AddCustomer()
+        public frmAddCustomer()
         {
             InitializeComponent();
         }

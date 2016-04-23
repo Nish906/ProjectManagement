@@ -1,6 +1,6 @@
-﻿namespace ScreenDesignsWindowsForm
+﻿namespace M.U.N_System_BackEnd
 {
-    partial class FindCustomer
+    partial class frmFindCustomer
     {
         /// <summary>
         /// Required designer variable.

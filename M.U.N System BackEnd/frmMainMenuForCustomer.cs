@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ScreenDesignsWindowsForm
+namespace M.U.N_System_BackEnd
 {
-    public partial class MainMenuForCustomer : Form
+    public partial class frmMainMenuForCustomer : Form
     {
-        public MainMenuForCustomer()
+        public frmMainMenuForCustomer()
         {
             InitializeComponent();
         }
@@ -20,21 +20,21 @@ namespace ScreenDesignsWindowsForm
         private void button1_Click(object sender, EventArgs e)
         {
             //Add customer button
-            AddCustomer Customer = new AddCustomer();
+            frmAddCustomer Customer = new frmAddCustomer();
             Customer.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //Add filter payment button
-            FilterPayment Customer = new FilterPayment();
+            frmFilterPayment Customer = new frmFilterPayment();
             Customer.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //Add update customer button
-            UpdateCustomer Customer = new UpdateCustomer();
+            frmUpdateCustomer Customer = new frmUpdateCustomer();
             Customer.Show();
         }
 
@@ -42,7 +42,7 @@ namespace ScreenDesignsWindowsForm
         {
 
             //Add Filter customer button
-            FilterCustomer Customer = new FilterCustomer
+            frmFilterCustomer Customer = new frmFilterCustomer
 ();
             Customer.Show();
         }
@@ -50,7 +50,7 @@ namespace ScreenDesignsWindowsForm
         private void button5_Click(object sender, EventArgs e)
         {
             //Add find customer button
-            FindCustomer Customer = new FindCustomer();
+            frmFindCustomer Customer = new frmFindCustomer();
             Customer.Show();
         }
 

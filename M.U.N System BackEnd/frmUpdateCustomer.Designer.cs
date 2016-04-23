@@ -1,6 +1,6 @@
-﻿namespace ScreenDesignsWindowsForm
+﻿namespace M.U.N_System_BackEnd
 {
-    partial class UpdateCustomer
+    partial class frmUpdateCustomer
     {
         /// <summary>
         /// Required designer variable.

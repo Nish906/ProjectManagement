@@ -37,6 +37,11 @@ namespace M.U.N_System_BackEnd
             //close form
             Close();
         }
+
+        private void frmUpdateAppointment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  
