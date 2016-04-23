@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyClassLibrary;
 
 namespace M.U.N_System_BackEnd
 {
@@ -20,7 +19,22 @@ namespace M.U.N_System_BackEnd
 
         private void btnEmails_Click(object sender, EventArgs e)
         {
-             
+            //create instance of form
+            frmEmails Emails = new frmEmails();
+            //show form
+            Emails.Show();
+            //Close current form
+            this.Hide();
+        }
+
+        private void btnAppointments_Click(object sender, EventArgs e)
+        {
+            //create instance of form
+            frmAppointments Appointments = new frmAppointments();
+            //show form
+            Appointments.Show();
+            //Close current form
+            this.Hide();
         }
     }
 }

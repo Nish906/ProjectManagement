@@ -77,17 +77,23 @@
     <Compile Include="frmBookAppointment.Designer.cs">
       <DependentUpon>frmBookAppointment.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmContacts.cs">
+    <Compile Include="frmDefault.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmContacts.Designer.cs">
-      <DependentUpon>frmContacts.cs</DependentUpon>
+    <Compile Include="frmDefault.Designer.cs">
+      <DependentUpon>frmDefault.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmailsMain.cs">
+    <Compile Include="frmEmailContacts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmailsMain.Designer.cs">
-      <DependentUpon>frmEmailsMain.cs</DependentUpon>
+    <Compile Include="frmEmailContacts.Designer.cs">
+      <DependentUpon>frmEmailContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmails.Designer.cs">
+      <DependentUpon>frmEmails.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListOfAppointments.cs">
       <SubType>Form</SubType>
@@ -113,10 +119,10 @@
     <Compile Include="frmUpdateAppointment.Designer.cs">
       <DependentUpon>frmUpdateAppointment.cs</DependentUpon>
     </Compile>
-    <Compile Include="OurDatabaseDataSetAppointmentDates.Designer.cs">
+    <Compile Include="OurDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,11 +135,14 @@
     <EmbeddedResource Include="frmBookAppointment.resx">
       <DependentUpon>frmBookAppointment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmContacts.resx">
-      <DependentUpon>frmContacts.cs</DependentUpon>
+    <EmbeddedResource Include="frmDefault.resx">
+      <DependentUpon>frmDefault.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmailsMain.resx">
-      <DependentUpon>frmEmailsMain.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmailContacts.resx">
+      <DependentUpon>frmEmailContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmails.resx">
+      <DependentUpon>frmEmails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListOfAppointments.resx">
       <DependentUpon>frmListOfAppointments.cs</DependentUpon>
@@ -156,16 +165,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="OurDatabaseDataSetAppointmentDates.xsc">
-      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
+    <None Include="OurDatabaseDataSet.xsc">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="OurDatabaseDataSetAppointmentDates.xsd">
+    <None Include="OurDatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>OurDatabaseDataSetAppointmentDates.Designer.cs</LastGenOutput>
+      <LastGenOutput>OurDatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="OurDatabaseDataSetAppointmentDates.xss">
-      <DependentUpon>OurDatabaseDataSetAppointmentDates.xsd</DependentUpon>
+    <None Include="OurDatabaseDataSet.xss">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

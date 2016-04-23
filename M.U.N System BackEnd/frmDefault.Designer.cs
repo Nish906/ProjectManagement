@@ -28,60 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDefault));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEmails = new System.Windows.Forms.Button();
-            this.btnAppointment = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnAppointments = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(185, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(328, 293);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnEmails
             // 
-            this.btnEmails.Location = new System.Drawing.Point(124, 235);
-            this.btnEmails.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEmails.Location = new System.Drawing.Point(222, 349);
             this.btnEmails.Name = "btnEmails";
-            this.btnEmails.Size = new System.Drawing.Size(186, 66);
-            this.btnEmails.TabIndex = 7;
+            this.btnEmails.Size = new System.Drawing.Size(260, 118);
+            this.btnEmails.TabIndex = 1;
             this.btnEmails.Text = "Emails";
             this.btnEmails.UseVisualStyleBackColor = true;
             this.btnEmails.Click += new System.EventHandler(this.btnEmails_Click);
             // 
-            // btnAppointment
-            // 
-            this.btnAppointment.Location = new System.Drawing.Point(124, 152);
-            this.btnAppointment.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAppointment.Name = "btnAppointment";
-            this.btnAppointment.Size = new System.Drawing.Size(186, 66);
-            this.btnAppointment.TabIndex = 6;
-            this.btnAppointment.Text = "Appointments";
-            this.btnAppointment.UseVisualStyleBackColor = true;
-            // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(124, 71);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCustomers.Location = new System.Drawing.Point(222, 489);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(186, 66);
-            this.btnCustomers.TabIndex = 5;
+            this.btnCustomers.Size = new System.Drawing.Size(260, 118);
+            this.btnCustomers.TabIndex = 2;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = true;
             // 
+            // btnAppointments
+            // 
+            this.btnAppointments.Location = new System.Drawing.Point(222, 628);
+            this.btnAppointments.Name = "btnAppointments";
+            this.btnAppointments.Size = new System.Drawing.Size(260, 118);
+            this.btnAppointments.TabIndex = 3;
+            this.btnAppointments.Text = "Appointments";
+            this.btnAppointments.UseVisualStyleBackColor = true;
+            this.btnAppointments.Click += new System.EventHandler(this.btnAppointments_Click);
+            // 
             // frmDefault
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 370);
-            this.Controls.Add(this.btnEmails);
-            this.Controls.Add(this.btnAppointment);
+            this.ClientSize = new System.Drawing.Size(713, 792);
+            this.Controls.Add(this.btnAppointments);
             this.Controls.Add(this.btnCustomers);
+            this.Controls.Add(this.btnEmails);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmDefault";
             this.Text = "frmDefault";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnEmails;
-        private System.Windows.Forms.Button btnAppointment;
         private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnAppointments;
     }
 }

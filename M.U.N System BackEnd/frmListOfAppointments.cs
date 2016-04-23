@@ -20,8 +20,7 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'appointment_ListOfAppointments.tblAppointments' table. You can move, or remove it, as needed.
-            //this.tblAppointmentsTableAdapter.Fill(this.appointment_ListOfAppointments.tblAppointments);
+            
 
         }
 
@@ -40,8 +39,7 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointmentDates.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSetAppointmentDates.tblAppointment);
+            
 
 
         }
