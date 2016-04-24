@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnBook = new System.Windows.Forms.Button();
             this.lblFilter = new System.Windows.Forms.Label();
             this.lblListOfAppointments = new System.Windows.Forms.Label();
@@ -35,7 +36,19 @@
             this.btndelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.tblAppointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblAppointmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblAppointmentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblAppointmentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.lstAppointments = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
@@ -114,16 +127,32 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // tblAppointmentBindingSource
+            // 
+            this.tblAppointmentBindingSource.DataMember = "tblAppointment";
+            // 
+            // tblAppointmentBindingSource1
+            // 
+            this.tblAppointmentBindingSource1.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource1.DataSource = this.ourDatabaseDataSetBindingSource;
+            // 
+            // tblAppointmentBindingSource2
+            // 
+            this.tblAppointmentBindingSource2.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource2.DataSource = this.ourDatabaseDataSetBindingSource;
+            // 
+            // tblAppointmentBindingSource3
+            // 
+            this.tblAppointmentBindingSource3.DataMember = "tblAppointment";
+            // 
             // lstAppointments
             // 
             this.lstAppointments.FormattingEnabled = true;
             this.lstAppointments.ItemHeight = 20;
-            this.lstAppointments.Location = new System.Drawing.Point(106, 145);
-            this.lstAppointments.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lstAppointments.Location = new System.Drawing.Point(68, 146);
             this.lstAppointments.Name = "lstAppointments";
-            this.lstAppointments.Size = new System.Drawing.Size(610, 324);
+            this.lstAppointments.Size = new System.Drawing.Size(733, 304);
             this.lstAppointments.TabIndex = 36;
-            this.lstAppointments.ValueMember = "AppointmentDate";
             // 
             // frmListOfAppointments
             // 
@@ -141,7 +170,7 @@
             this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmListOfAppointments";
-            this.Text = "frmListOfAppointment";
+            this.Text = "zzzzzz";
             this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,10 +186,12 @@
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailAddressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn appointmentDetailsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource1;
+        private System.Windows.Forms.BindingSource ourDatabaseDataSetBindingSource;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource2;
+        private System.Windows.Forms.BindingSource tblAppointmentBindingSource3;
+        private System.Windows.Forms.BindingSource ourDatabaseDataSetBindingSource1;
         private System.Windows.Forms.ListBox lstAppointments;
         
     }
