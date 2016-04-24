@@ -128,5 +128,17 @@ namespace M.U.N_System_BackEnd.Properties {
                 return ((string)(this["OurDatabaseConnectionString5"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\Chavda_2\\Source\\Repos\\Proje" +
+            "ctManagement4\\App_Data\\OurDatabase.mdf;Integrated Security=True;Connect Timeout=" +
+            "30")]
+        public string OurDatabaseConnectionString6 {
+            get {
+                return ((string)(this["OurDatabaseConnectionString6"]));
+            }
+        }
     }
 }

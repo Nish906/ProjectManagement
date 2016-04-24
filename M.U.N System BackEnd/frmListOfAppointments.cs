@@ -41,10 +41,18 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet3.tblAppointment' table. You can move, or remove it, as needed.
+            this.tblAppointmentTableAdapter3.Fill(this.ourDatabaseDataSet3.tblAppointment);
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet2.tblAppointment' table. You can move, or remove it, as needed.
+            this.tblAppointmentTableAdapter2.Fill(this.ourDatabaseDataSet2.tblAppointment);
+            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointment.tblAppointment' table. You can move, or remove it, as needed.
+            //this.tblAppointmentTableAdapter1.Fill(this.ourDatabaseDataSetAppointment.tblAppointment);
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet1.tblAppointment' table. You can move, or remove it, as needed.
+           
             // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointment.tblAppointment' table. You can move, or remove it, as needed.
             //this.tblAppointmentTableAdapter1.Fill(this.ourDatabaseDataSetAppointment.tblAppointment);
             // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSet.tblAppointment);
+            
             // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblAppointment' table. You can move, or remove it, as needed.
             //this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSet.tblAppointment);
             
@@ -62,20 +70,38 @@ namespace M.U.N_System_BackEnd
 
         private void btndelete_Click_1(object sender, EventArgs e)
         {
+
+            DeleteAppointment();
             //this checks to see if the user has selected an item from the listbox, as the default value is -1
-            if (lstAppointments.SelectedIndex > -1)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this saved search?", "Confirm Deletion", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    MessageBox.Show(Convert.ToString((AppointmentList)));
-                }
+            //if (lstAppointments.SelectedIndex > -1)
+            //{
+
+            /////////////////////
+            //    if (MessageBox.Show("Are you sure you want to delete this saved search?", "Confirm Deletion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            //    {
+            //        string AppointmentList = lstAppointments.SelectedIndex.ToString();
+            //        DateTime AppointmentDate = Convert.ToDateTime(AppointmentList.Substring(8,2));
+
+            //        clsAppointmentCollection Appointment = new clsAppointmentCollection();
+            //        Appointment.Delete(AppointmentDate);
+            //        frmListOfAppointments Form = new frmListOfAppointments();
+            //        this.Close();
+            //        Form.Show();
+                    
+
+            //    }
 
             }
-            else
-            {
-                //this gives us an error message as nothing as been selected
-                lblError.Text = "Please Select an item to delete from the listbox";
-            }
+        ///////////
+            //else
+            //{
+            //    //this gives us an error message as nothing as been selected
+            //    lblError.Text = "Please Select an item to delete from the listbox";
+            //}
+        ///////////////
+
+
+
             //clsAppointmentCollection delete = new clsAppointmentCollection();
             //delete.Delete();
             //this.Hide();
@@ -95,7 +121,31 @@ namespace M.U.N_System_BackEnd
             //MyList.Refresh();
             ////re-opens form
             //MyList.Show();
+    //}
+
+
+        void DeleteAppointment()
+        {
+
+            Int32 AppointmentID;
+            if (txtAppointmentDate.Text != "")
+            {
+                AppointmentID = Convert.ToInt32(txtAppointmentDate.Text);
+                //fiunction to cancel the required record
+                //create instance of order
+                clsAppointmentCollection appointment = new clsAppointmentCollection();
+                //find record to cancel
+                appointment.ThisAppointment.Find(AppointmentID);
+                appointment.Delete();
+                lblError.Text = "The Order (Number: " + AppointmentID + " ) has been cancelled";
+            }
+            else
+            {
+                lblError.Text = "Please enter a valid Order Number";
+            }
         }
+
+
 
         private void btnBook_Click_1(object sender, EventArgs e)
         {

@@ -108,9 +108,10 @@ namespace MyClassLibrary
             //connect to the database
             clsDataConnection DB = new clsDataConnection();
             //set the parameter for the store procedure
+           // DB.AddParameter("AppointmentDate", AppointmentDate);
             DB.AddParameter("@AppointmentID", thisAppointment.AppointmentID);
             //Excute the store procedure
-            DB.Execute("sproc_tblAppointment_Delete");
+            DB.Execute("sproc_tblAppointments_Delete");
         }
 
         public int AddBooking()
@@ -125,6 +126,6 @@ namespace MyClassLibrary
 
         }
 
-        
+
     }
 }
