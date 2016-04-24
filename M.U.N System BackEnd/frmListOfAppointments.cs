@@ -13,6 +13,8 @@ namespace M.U.N_System_BackEnd
 {
     public partial class frmListOfAppointments : Form
     {
+        private List<Int32> AppointmentList = new List<Int32>();
+
         public frmListOfAppointments()
         {
             InitializeComponent();
@@ -60,12 +62,26 @@ namespace M.U.N_System_BackEnd
 
         private void btndelete_Click_1(object sender, EventArgs e)
         {
-            clsAppointmentCollection delete = new clsAppointmentCollection();
-            delete.Delete();
-            this.Hide();
-            frmListOfAppointments form = new frmListOfAppointments();
-            form.Show();
-            this.Close();
+            //this checks to see if the user has selected an item from the listbox, as the default value is -1
+            if (lstAppointments.SelectedIndex > -1)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this saved search?", "Confirm Deletion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    MessageBox.Show(Convert.ToString((AppointmentList)));
+                }
+
+            }
+            else
+            {
+                //this gives us an error message as nothing as been selected
+                lblError.Text = "Please Select an item to delete from the listbox";
+            }
+            //clsAppointmentCollection delete = new clsAppointmentCollection();
+            //delete.Delete();
+            //this.Hide();
+            //frmListOfAppointments form = new frmListOfAppointments();
+            //form.Show();
+            //this.Close();
 
             //// Display a message box informing the user of there selection 
             //MessageBox.Show("Are you sure you want to delete", "My Application",

@@ -43,30 +43,30 @@
             this.ourDatabaseDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.lstAppointments = new System.Windows.Forms.ListBox();
+            this.tblAppointmentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSetAppointment = new M.U.N_System_BackEnd.OurDatabaseDataSetAppointment();
             this.tblAppointmentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
             this.tblAppointmentTableAdapter = new M.U.N_System_BackEnd.OurDatabaseDataSetTableAdapters.tblAppointmentTableAdapter();
-            this.ourDatabaseDataSetAppointment = new M.U.N_System_BackEnd.OurDatabaseDataSetAppointment();
-            this.tblAppointmentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentTableAdapter1 = new M.U.N_System_BackEnd.OurDatabaseDataSetAppointmentTableAdapters.tblAppointmentTableAdapter();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
             // 
-            this.btnBook.Location = new System.Drawing.Point(208, 557);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBook.Location = new System.Drawing.Point(139, 362);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(158, 68);
+            this.btnBook.Size = new System.Drawing.Size(105, 44);
             this.btnBook.TabIndex = 35;
             this.btnBook.Text = "Book Appointment";
             this.btnBook.UseVisualStyleBackColor = true;
@@ -75,10 +75,9 @@
             // lblFilter
             // 
             this.lblFilter.AutoSize = true;
-            this.lblFilter.Location = new System.Drawing.Point(64, 108);
-            this.lblFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFilter.Location = new System.Drawing.Point(43, 70);
             this.lblFilter.Name = "lblFilter";
-            this.lblFilter.Size = new System.Drawing.Size(105, 20);
+            this.lblFilter.Size = new System.Drawing.Size(70, 13);
             this.lblFilter.TabIndex = 34;
             this.lblFilter.Text = "Filter By Date";
             // 
@@ -86,19 +85,17 @@
             // 
             this.lblListOfAppointments.AutoSize = true;
             this.lblListOfAppointments.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListOfAppointments.Location = new System.Drawing.Point(238, 37);
-            this.lblListOfAppointments.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblListOfAppointments.Location = new System.Drawing.Point(159, 24);
             this.lblListOfAppointments.Name = "lblListOfAppointments";
-            this.lblListOfAppointments.Size = new System.Drawing.Size(254, 29);
+            this.lblListOfAppointments.Size = new System.Drawing.Size(178, 20);
             this.lblListOfAppointments.TabIndex = 33;
             this.lblListOfAppointments.Text = "List Of Appointments";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(420, 557);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClose.Location = new System.Drawing.Point(280, 362);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(158, 68);
+            this.btnClose.Size = new System.Drawing.Size(105, 44);
             this.btnClose.TabIndex = 32;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -106,10 +103,9 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(524, 480);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btndelete.Location = new System.Drawing.Point(349, 312);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(158, 68);
+            this.btndelete.Size = new System.Drawing.Size(105, 44);
             this.btndelete.TabIndex = 31;
             this.btndelete.Text = "Delete Appointments";
             this.btndelete.UseVisualStyleBackColor = true;
@@ -117,10 +113,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(320, 482);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(213, 313);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(158, 66);
+            this.btnUpdate.Size = new System.Drawing.Size(105, 43);
             this.btnUpdate.TabIndex = 30;
             this.btnUpdate.Text = "Update Appointments";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -128,10 +123,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(106, 480);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(71, 312);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(158, 68);
+            this.btnAdd.Size = new System.Drawing.Size(105, 44);
             this.btnAdd.TabIndex = 29;
             this.btnAdd.Text = "Add Appointments";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -160,12 +154,22 @@
             this.lstAppointments.DataSource = this.tblAppointmentBindingSource5;
             this.lstAppointments.DisplayMember = "AppointmentDate";
             this.lstAppointments.FormattingEnabled = true;
-            this.lstAppointments.ItemHeight = 20;
-            this.lstAppointments.Location = new System.Drawing.Point(68, 146);
+            this.lstAppointments.Location = new System.Drawing.Point(45, 95);
+            this.lstAppointments.Margin = new System.Windows.Forms.Padding(2);
             this.lstAppointments.Name = "lstAppointments";
-            this.lstAppointments.Size = new System.Drawing.Size(733, 304);
+            this.lstAppointments.Size = new System.Drawing.Size(490, 199);
             this.lstAppointments.TabIndex = 36;
             this.lstAppointments.ValueMember = "AppointmentDate";
+            // 
+            // tblAppointmentBindingSource5
+            // 
+            this.tblAppointmentBindingSource5.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource5.DataSource = this.ourDatabaseDataSetAppointment;
+            // 
+            // ourDatabaseDataSetAppointment
+            // 
+            this.ourDatabaseDataSetAppointment.DataSetName = "OurDatabaseDataSetAppointment";
+            this.ourDatabaseDataSetAppointment.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblAppointmentBindingSource4
             // 
@@ -181,26 +185,27 @@
             // 
             this.tblAppointmentTableAdapter.ClearBeforeFill = true;
             // 
-            // ourDatabaseDataSetAppointment
-            // 
-            this.ourDatabaseDataSetAppointment.DataSetName = "OurDatabaseDataSetAppointment";
-            this.ourDatabaseDataSetAppointment.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblAppointmentBindingSource5
-            // 
-            this.tblAppointmentBindingSource5.DataMember = "tblAppointment";
-            this.tblAppointmentBindingSource5.DataSource = this.ourDatabaseDataSetAppointment;
-            // 
             // tblAppointmentTableAdapter1
             // 
             this.tblAppointmentTableAdapter1.ClearBeforeFill = true;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(85, 294);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 15);
+            this.lblError.TabIndex = 37;
+            // 
             // frmListOfAppointments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(861, 671);
+            this.ClientSize = new System.Drawing.Size(574, 436);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lstAppointments);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblFilter);
@@ -209,7 +214,6 @@
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmListOfAppointments";
             this.Text = "zzzzzz";
             this.Load += new System.EventHandler(this.frmListOfAppointments_Load_1);
@@ -218,10 +222,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +253,7 @@
         private OurDatabaseDataSetAppointment ourDatabaseDataSetAppointment;
         private System.Windows.Forms.BindingSource tblAppointmentBindingSource5;
         private OurDatabaseDataSetAppointmentTableAdapters.tblAppointmentTableAdapter tblAppointmentTableAdapter1;
+        private System.Windows.Forms.Label lblError;
         
     }
 }
