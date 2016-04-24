@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnSendEmail = new System.Windows.Forms.Button();
             this.btnContacts = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ourDatabaseDataSet = new M.U.N_System_BackEnd.OurDatabaseDataSet();
+            this.tblEmailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblEmailTableAdapter = new M.U.N_System_BackEnd.OurDatabaseDataSetTableAdapters.tblEmailTableAdapter();
+            this.emailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailSubjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailFieldDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEmailBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -78,11 +90,70 @@
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.emailAddressDataGridViewTextBoxColumn,
+            this.emailSubjectDataGridViewTextBoxColumn,
+            this.emailDateDataGridViewTextBoxColumn,
+            this.emailFieldDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblEmailBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(61, 151);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(797, 358);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // ourDatabaseDataSet
+            // 
+            this.ourDatabaseDataSet.DataSetName = "OurDatabaseDataSet";
+            this.ourDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblEmailBindingSource
+            // 
+            this.tblEmailBindingSource.DataMember = "tblEmail";
+            this.tblEmailBindingSource.DataSource = this.ourDatabaseDataSet;
+            // 
+            // tblEmailTableAdapter
+            // 
+            this.tblEmailTableAdapter.ClearBeforeFill = true;
+            // 
+            // emailAddressDataGridViewTextBoxColumn
+            // 
+            this.emailAddressDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.emailAddressDataGridViewTextBoxColumn.DataPropertyName = "EmailAddress";
+            this.emailAddressDataGridViewTextBoxColumn.HeaderText = "Email Address";
+            this.emailAddressDataGridViewTextBoxColumn.Name = "emailAddressDataGridViewTextBoxColumn";
+            // 
+            // emailSubjectDataGridViewTextBoxColumn
+            // 
+            this.emailSubjectDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.emailSubjectDataGridViewTextBoxColumn.DataPropertyName = "EmailSubject";
+            this.emailSubjectDataGridViewTextBoxColumn.HeaderText = "Email Subject";
+            this.emailSubjectDataGridViewTextBoxColumn.Name = "emailSubjectDataGridViewTextBoxColumn";
+            // 
+            // emailDateDataGridViewTextBoxColumn
+            // 
+            this.emailDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.emailDateDataGridViewTextBoxColumn.DataPropertyName = "EmailDate";
+            this.emailDateDataGridViewTextBoxColumn.HeaderText = "Email Date";
+            this.emailDateDataGridViewTextBoxColumn.Name = "emailDateDataGridViewTextBoxColumn";
+            // 
+            // emailFieldDataGridViewTextBoxColumn
+            // 
+            this.emailFieldDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.emailFieldDataGridViewTextBoxColumn.DataPropertyName = "EmailField";
+            this.emailFieldDataGridViewTextBoxColumn.HeaderText = "Email Field";
+            this.emailFieldDataGridViewTextBoxColumn.Name = "emailFieldDataGridViewTextBoxColumn";
+            // 
             // frmEmails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 647);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnContacts);
             this.Controls.Add(this.btnSendEmail);
@@ -91,6 +162,9 @@
             this.Name = "frmEmails";
             this.Text = "frmEmails";
             this.Load += new System.EventHandler(this.frmEmails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEmailBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +176,13 @@
         private System.Windows.Forms.Button btnSendEmail;
         private System.Windows.Forms.Button btnContacts;
         private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private OurDatabaseDataSet ourDatabaseDataSet;
+        private System.Windows.Forms.BindingSource tblEmailBindingSource;
+        private OurDatabaseDataSetTableAdapters.tblEmailTableAdapter tblEmailTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailSubjectDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailFieldDataGridViewTextBoxColumn;
     }
 }
