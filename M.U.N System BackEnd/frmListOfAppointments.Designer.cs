@@ -34,7 +34,6 @@
             this.lblListOfAppointments = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tblAppointmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -49,9 +48,9 @@
             this.tblAppointmentTableAdapter2 = new M.U.N_System_BackEnd.OurDatabaseDataSet2TableAdapters.tblAppointmentTableAdapter();
             this.txtAppointmentDate = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tblAppointmentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.ourDatabaseDataSet3 = new M.U.N_System_BackEnd.OurDatabaseDataSet3();
             this.tblAppointmentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.ourDatabaseDataSet3 = new M.U.N_System_BackEnd.OurDatabaseDataSet3();
+            this.tblAppointmentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.tblAppointmentTableAdapter3 = new M.U.N_System_BackEnd.OurDatabaseDataSet3TableAdapters.tblAppointmentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource2)).BeginInit();
@@ -59,16 +58,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBook
             // 
-            this.btnBook.Location = new System.Drawing.Point(139, 362);
+            this.btnBook.Location = new System.Drawing.Point(71, 380);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(105, 44);
+            this.btnBook.Size = new System.Drawing.Size(173, 44);
             this.btnBook.TabIndex = 35;
             this.btnBook.Text = "Book Appointment";
             this.btnBook.UseVisualStyleBackColor = true;
@@ -95,9 +94,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(280, 362);
+            this.btnClose.Location = new System.Drawing.Point(280, 380);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(105, 44);
+            this.btnClose.Size = new System.Drawing.Size(174, 44);
             this.btnClose.TabIndex = 32;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -105,29 +104,19 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(349, 312);
+            this.btndelete.Location = new System.Drawing.Point(280, 299);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(105, 44);
+            this.btndelete.Size = new System.Drawing.Size(174, 44);
             this.btndelete.TabIndex = 31;
             this.btndelete.Text = "Delete Appointments";
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click_1);
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(213, 313);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(105, 43);
-            this.btnUpdate.TabIndex = 30;
-            this.btnUpdate.Text = "Update Appointments";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
-            // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(71, 312);
+            this.btnAdd.Location = new System.Drawing.Point(71, 299);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(105, 44);
+            this.btnAdd.Size = new System.Drawing.Size(173, 44);
             this.btnAdd.TabIndex = 29;
             this.btnAdd.Text = "Add Appointments";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -197,9 +186,9 @@
             // 
             // txtAppointmentDate
             // 
-            this.txtAppointmentDate.Location = new System.Drawing.Point(462, 325);
+            this.txtAppointmentDate.Location = new System.Drawing.Point(280, 354);
             this.txtAppointmentDate.Name = "txtAppointmentDate";
-            this.txtAppointmentDate.Size = new System.Drawing.Size(100, 20);
+            this.txtAppointmentDate.Size = new System.Drawing.Size(174, 20);
             this.txtAppointmentDate.TabIndex = 38;
             // 
             // listBox1
@@ -213,20 +202,20 @@
             this.listBox1.TabIndex = 39;
             this.listBox1.ValueMember = "AppointmentID";
             // 
-            // tblAppointmentBindingSource4
+            // tblAppointmentBindingSource5
             // 
-            this.tblAppointmentBindingSource4.DataMember = "tblAppointment";
-            this.tblAppointmentBindingSource4.DataSource = this.ourDatabaseDataSetAppointment;
+            this.tblAppointmentBindingSource5.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource5.DataSource = this.ourDatabaseDataSet3;
             // 
             // ourDatabaseDataSet3
             // 
             this.ourDatabaseDataSet3.DataSetName = "OurDatabaseDataSet3";
             this.ourDatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblAppointmentBindingSource5
+            // tblAppointmentBindingSource4
             // 
-            this.tblAppointmentBindingSource5.DataMember = "tblAppointment";
-            this.tblAppointmentBindingSource5.DataSource = this.ourDatabaseDataSet3;
+            this.tblAppointmentBindingSource4.DataMember = "tblAppointment";
+            this.tblAppointmentBindingSource4.DataSource = this.ourDatabaseDataSetAppointment;
             // 
             // tblAppointmentTableAdapter3
             // 
@@ -247,7 +236,6 @@
             this.Controls.Add(this.lblListOfAppointments);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btndelete);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Name = "frmListOfAppointments";
             this.Text = "zzzzzz";
@@ -258,9 +246,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSetAppointment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ourDatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAppointmentBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,7 +261,6 @@
         private System.Windows.Forms.Label lblListOfAppointments;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.BindingSource tblAppointmentBindingSource1;
         private System.Windows.Forms.BindingSource tblAppointmentBindingSource2;

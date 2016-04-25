@@ -137,6 +137,9 @@ namespace M.U.N_System_BackEnd
                 //find record to cancel
                 appointment.ThisAppointment.Find(AppointmentID);
                 appointment.Delete();
+                frmListOfAppointments Form = new frmListOfAppointments();
+                Form.Refresh();
+                lstAppointments.Refresh();
                 lblError.Text = "The Order (Number: " + AppointmentID + " ) has been cancelled";
             }
             else
