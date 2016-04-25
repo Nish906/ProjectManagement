@@ -133,7 +133,7 @@ namespace M.U.N_System_BackEnd
                 frmListOfAppointments New = new frmListOfAppointments();
                 New.Show();
                 //Error Message
-                lblError.Text = "The Order (Number: " + AppointmentID + " ) has been cancelled";
+                lblError.Text = "The Appointment (ID: " + AppointmentID + " ) has been cancelled";
             }
             else
             {

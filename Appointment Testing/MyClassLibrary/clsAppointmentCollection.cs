@@ -116,12 +116,15 @@ namespace MyClassLibrary
 
         public int AddBooking()
         {
+            //connect to the database
             clsDataConnection DB = new clsDataConnection();
+            //set the parameter for the store procedure
             DB.AddParameter("@FirstName", thisAppointment.FirstName);
             DB.AddParameter("@LastName", thisAppointment.LastName);
             DB.AddParameter("@EmailAddress", thisAppointment.EmailAddress);
             DB.AddParameter("@AppointmentDetails", thisAppointment.AppointmentDetails);
             DB.AddParameter("@AppointmentDate", thisAppointment.AppointmentDate);
+            //Excute the store procedure
             return DB.Execute("sproc_tblBookedAppointments_Insert");
 
         }
