@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using MyClassLibrary;
 
 public partial class Book_Appointment : System.Web.UI.Page
 {
@@ -23,6 +24,7 @@ public partial class Book_Appointment : System.Web.UI.Page
         {
 
             //send user to confirmation page
+            AddBooking();
             Response.Redirect("Book Appointment Confirmation.aspx"); 
 
         }
@@ -61,4 +63,24 @@ public partial class Book_Appointment : System.Web.UI.Page
     {
         
     }
+
+    void AddBooking()
+    {
+        clsAppointmentCollection Appointment = new clsAppointmentCollection();
+        Boolean OK = Appointment.ThisAppointment.ValidAppointmentDetailMax(txtAppointmentDetails.Text);
+        if (OK == true)
+        {
+            Appointment.ThisAppointment.FirstName = txtFirstName.Text;
+            Appointment.ThisAppointment.LastName = txtLastName.Text;
+            Appointment.ThisAppointment.EmailAddress = txtEmail.Text;
+            Appointment.ThisAppointment.AppointmentDetails = txtAppointmentDetails.Text;
+            Appointment.ThisAppointment.AppointmentDate = Convert.ToDateTime(txtAppointmentDate.Text);
+            Appointment.AddBooking();
+        }
+        else
+        {
+            lblError.Text = "There was a problem";
+        }
+    }
+
 }
