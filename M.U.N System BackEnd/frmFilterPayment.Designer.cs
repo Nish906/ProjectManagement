@@ -39,63 +39,62 @@
             // 
             this.lblFilterPayment.AutoSize = true;
             this.lblFilterPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.lblFilterPayment.Location = new System.Drawing.Point(52, 40);
-            this.lblFilterPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFilterPayment.Location = new System.Drawing.Point(35, 26);
             this.lblFilterPayment.Name = "lblFilterPayment";
-            this.lblFilterPayment.Size = new System.Drawing.Size(307, 47);
+            this.lblFilterPayment.Size = new System.Drawing.Size(203, 31);
             this.lblFilterPayment.TabIndex = 34;
             this.lblFilterPayment.Text = "Filter Payments";
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(61, 671);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBack.Location = new System.Drawing.Point(41, 436);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(112, 35);
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 33;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(61, 626);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHome.Location = new System.Drawing.Point(41, 407);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(112, 35);
+            this.btnHome.Size = new System.Drawing.Size(75, 23);
             this.btnHome.TabIndex = 32;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lstFilterPayment
             // 
             this.lstFilterPayment.FormattingEnabled = true;
-            this.lstFilterPayment.ItemHeight = 20;
-            this.lstFilterPayment.Location = new System.Drawing.Point(61, 168);
-            this.lstFilterPayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lstFilterPayment.Location = new System.Drawing.Point(41, 109);
             this.lstFilterPayment.Name = "lstFilterPayment";
-            this.lstFilterPayment.Size = new System.Drawing.Size(628, 424);
+            this.lstFilterPayment.Size = new System.Drawing.Size(420, 277);
             this.lstFilterPayment.TabIndex = 31;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(61, 97);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(41, 63);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 28);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 30;
             // 
-            // FilterPayment
+            // frmFilterPayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 747);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(514, 486);
             this.Controls.Add(this.lblFilterPayment);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.lstFilterPayment);
             this.Controls.Add(this.comboBox1);
-            this.Name = "FilterPayment";
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmFilterPayment";
             this.Text = "FilterPayment";
             this.Load += new System.EventHandler(this.FilterPayment_Load);
             this.ResumeLayout(false);

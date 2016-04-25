@@ -137,5 +137,12 @@ namespace MyClassLibrary
         //    //execute the query returning the primary key
         //    DB.Execute("sproc_tblCustomer_Update");
         //}
+
+        public void Delete()
+        {
+            clsDataConnection Data = new clsDataConnection();
+            Data.AddParameter("CustomerID", thisCustomer.CustomerID);
+            Data.Execute("sproc_tblCustomer_Delete");
+        }
     }
 }

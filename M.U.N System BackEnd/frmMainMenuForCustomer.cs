@@ -64,5 +64,47 @@ namespace M.U.N_System_BackEnd
         {
 
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            //Add customer button
+            frmAddCustomer Customer = new frmAddCustomer();
+            Customer.Show();
+        }
+
+        private void btnFilterPayments_Click(object sender, EventArgs e)
+        {
+            //Add filter payment button
+            frmFilterPayment Customer = new frmFilterPayment();
+            Customer.Show();
+        }
+
+        private void btnUpdateCustomer_Click(object sender, EventArgs e)
+        {
+            //Add update customer button
+            frmUpdateCustomer Customer = new frmUpdateCustomer();
+            Customer.Show();
+        }
+
+        private void btnFilterCustomer_Click(object sender, EventArgs e)
+        {
+            //Add Filter customer button
+            frmFilterCustomer Customer = new frmFilterCustomer
+();
+            Customer.Show();
+        }
+
+        private void btnFindCustomer_Click(object sender, EventArgs e)
+        {
+            //Add find customer button
+            frmFindCustomer Customer = new frmFindCustomer();
+            Customer.Show();
+        }
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
+        {
+            //Close current form
+            Close();
+        }
     }
 }

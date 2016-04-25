@@ -62,5 +62,15 @@ namespace M.U.N_System_BackEnd
         {
 
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

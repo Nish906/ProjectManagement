@@ -49,6 +49,8 @@ namespace M.U.N_System_BackEnd
 
         private void frmEmails_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblEmail' table. You can move, or remove it, as needed.
+            this.tblEmailTableAdapter.Fill(this.ourDatabaseDataSet.tblEmail);
 
         }
     }

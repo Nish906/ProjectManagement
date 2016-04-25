@@ -33,5 +33,10 @@ namespace M.U.N_System_BackEnd
 
         }
 
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }

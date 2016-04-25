@@ -39,7 +39,9 @@ namespace M.U.N_System_BackEnd
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            
+            frmMainMenuForCustomer Customer = new frmMainMenuForCustomer();
+            Customer.Show();
+            this.Hide();
            
         }
     }

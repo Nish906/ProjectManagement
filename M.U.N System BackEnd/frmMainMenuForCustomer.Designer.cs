@@ -38,76 +38,78 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(212, 455);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReturn.Location = new System.Drawing.Point(35, 258);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(112, 35);
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
             this.btnReturn.TabIndex = 11;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click_1);
             // 
             // btnFindCustomer
             // 
-            this.btnFindCustomer.Location = new System.Drawing.Point(304, 360);
-            this.btnFindCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFindCustomer.Location = new System.Drawing.Point(84, 204);
             this.btnFindCustomer.Name = "btnFindCustomer";
-            this.btnFindCustomer.Size = new System.Drawing.Size(192, 52);
+            this.btnFindCustomer.Size = new System.Drawing.Size(128, 34);
             this.btnFindCustomer.TabIndex = 10;
             this.btnFindCustomer.Text = "Find Customer";
             this.btnFindCustomer.UseVisualStyleBackColor = true;
+            this.btnFindCustomer.Click += new System.EventHandler(this.btnFindCustomer_Click);
             // 
             // btnFilterCustomer
             // 
-            this.btnFilterCustomer.Location = new System.Drawing.Point(304, 300);
-            this.btnFilterCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFilterCustomer.Location = new System.Drawing.Point(84, 165);
             this.btnFilterCustomer.Name = "btnFilterCustomer";
-            this.btnFilterCustomer.Size = new System.Drawing.Size(192, 51);
+            this.btnFilterCustomer.Size = new System.Drawing.Size(128, 33);
             this.btnFilterCustomer.TabIndex = 9;
             this.btnFilterCustomer.Text = "Filter Customer";
             this.btnFilterCustomer.UseVisualStyleBackColor = true;
+            this.btnFilterCustomer.Click += new System.EventHandler(this.btnFilterCustomer_Click);
             // 
             // btnFilterPayments
             // 
-            this.btnFilterPayments.Location = new System.Drawing.Point(304, 175);
-            this.btnFilterPayments.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFilterPayments.Location = new System.Drawing.Point(84, 84);
             this.btnFilterPayments.Name = "btnFilterPayments";
-            this.btnFilterPayments.Size = new System.Drawing.Size(192, 52);
+            this.btnFilterPayments.Size = new System.Drawing.Size(128, 34);
             this.btnFilterPayments.TabIndex = 8;
             this.btnFilterPayments.Text = "Filter Payments";
             this.btnFilterPayments.UseVisualStyleBackColor = true;
+            this.btnFilterPayments.Click += new System.EventHandler(this.btnFilterPayments_Click);
             // 
             // btnUpdateCustomer
             // 
-            this.btnUpdateCustomer.Location = new System.Drawing.Point(304, 237);
-            this.btnUpdateCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(84, 124);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-            this.btnUpdateCustomer.Size = new System.Drawing.Size(192, 54);
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(128, 35);
             this.btnUpdateCustomer.TabIndex = 7;
             this.btnUpdateCustomer.Text = "Update Customer";
             this.btnUpdateCustomer.UseVisualStyleBackColor = true;
+            this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
             // 
             // btnAddCustomer
             // 
-            this.btnAddCustomer.Location = new System.Drawing.Point(304, 113);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddCustomer.Location = new System.Drawing.Point(84, 43);
             this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(192, 52);
+            this.btnAddCustomer.Size = new System.Drawing.Size(128, 34);
             this.btnAddCustomer.TabIndex = 6;
             this.btnAddCustomer.Text = "Add Customer";
             this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
-            // MainMenuForCustomer
+            // frmMainMenuForCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 602);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(323, 314);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnFindCustomer);
             this.Controls.Add(this.btnFilterCustomer);
             this.Controls.Add(this.btnFilterPayments);
             this.Controls.Add(this.btnUpdateCustomer);
             this.Controls.Add(this.btnAddCustomer);
-            this.Name = "MainMenuForCustomer";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frmMainMenuForCustomer";
             this.Text = "MainMenuForCustomer";
             this.Load += new System.EventHandler(this.MainMenuForCustomer_Load);
             this.ResumeLayout(false);

@@ -137,6 +137,11 @@
     <Compile Include="frmSendEmail.Designer.cs">
       <DependentUpon>frmSendEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="OurDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="OurDatabaseDataSetAppointment.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,12 +152,6 @@
     </Compile>
     <Compile Include="UpdateAppointment.Designer.cs">
       <DependentUpon>UpdateAppointment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMainMenu.Designer.cs">
-      <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainMenuForCustomer.cs">
       <SubType>Form</SubType>
@@ -210,9 +209,6 @@
     <EmbeddedResource Include="UpdateAppointment.resx">
       <DependentUpon>UpdateAppointment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainMenu.resx">
-      <DependentUpon>frmMainMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenuForCustomer.resx">
       <DependentUpon>frmMainMenuForCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +224,17 @@
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OurDatabaseDataSet.xsc">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSet.xss">
+      <DependentUpon>OurDatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="OurDatabaseDataSetAppointment.xsc">
       <DependentUpon>OurDatabaseDataSetAppointment.xsd</DependentUpon>
     </None>

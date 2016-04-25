@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyClassLibrary;
 
 namespace M.U.N_System_BackEnd
 {
@@ -27,7 +28,7 @@ namespace M.U.N_System_BackEnd
         private void button1_Click(object sender, EventArgs e)
         {
             //Go back to the home page
-            MainMenu Customer = new MainMenu();
+            frmMainMenuForCustomer Customer = new frmMainMenuForCustomer();
             Customer.Show();
 
         }
@@ -45,6 +46,18 @@ namespace M.U.N_System_BackEnd
         private void FilterPayment_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            //Go back to the home page
+            frmMainMenuForCustomer Customer = new frmMainMenuForCustomer();
+            Customer.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

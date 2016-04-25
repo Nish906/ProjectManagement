@@ -39,20 +39,18 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(766, 554);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSend.Location = new System.Drawing.Point(511, 360);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(179, 87);
+            this.btnSend.Size = new System.Drawing.Size(119, 57);
             this.btnSend.TabIndex = 15;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(13, 554);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReturn.Location = new System.Drawing.Point(9, 360);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(179, 87);
+            this.btnReturn.Size = new System.Drawing.Size(119, 57);
             this.btnReturn.TabIndex = 16;
             this.btnReturn.Text = "Retrun";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -60,54 +58,50 @@
             // 
             // txtSubject
             // 
-            this.txtSubject.Location = new System.Drawing.Point(74, 67);
-            this.txtSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSubject.Location = new System.Drawing.Point(49, 44);
             this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(871, 26);
+            this.txtSubject.Size = new System.Drawing.Size(582, 20);
             this.txtSubject.TabIndex = 24;
             // 
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
-            this.lblSubject.Location = new System.Drawing.Point(7, 70);
-            this.lblSubject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubject.Location = new System.Drawing.Point(5, 45);
             this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(67, 20);
+            this.lblSubject.Size = new System.Drawing.Size(46, 13);
             this.lblSubject.TabIndex = 23;
             this.lblSubject.Text = "Subject:";
             // 
             // lblTo
             // 
             this.lblTo.AutoSize = true;
-            this.lblTo.Location = new System.Drawing.Point(40, 19);
-            this.lblTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTo.Location = new System.Drawing.Point(27, 12);
             this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(31, 20);
+            this.lblTo.Size = new System.Drawing.Size(23, 13);
             this.lblTo.TabIndex = 22;
             this.lblTo.Text = "To:";
             // 
             // txtTo
             // 
-            this.txtTo.Location = new System.Drawing.Point(74, 14);
-            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTo.Location = new System.Drawing.Point(49, 9);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(871, 26);
+            this.txtTo.Size = new System.Drawing.Size(582, 20);
             this.txtTo.TabIndex = 21;
             // 
             // txtContent
             // 
-            this.txtContent.Location = new System.Drawing.Point(11, 121);
-            this.txtContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtContent.Location = new System.Drawing.Point(7, 79);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(934, 412);
+            this.txtContent.Size = new System.Drawing.Size(624, 269);
             this.txtContent.TabIndex = 25;
             // 
             // frmSendEmail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 658);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(639, 428);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtSubject);
             this.Controls.Add(this.lblSubject);
@@ -115,6 +109,7 @@
             this.Controls.Add(this.txtTo);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSend);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmSendEmail";
             this.Text = "frmSendEmail";
             this.ResumeLayout(false);
