@@ -57,4 +57,8 @@ public partial class Book_Appointment : System.Web.UI.Page
             lblError.Text = "These was a problem";
         }
     }
+    protected void txtAppointmentDate_TextChanged(object sender, EventArgs e)
+    {
+        
+    }
 }

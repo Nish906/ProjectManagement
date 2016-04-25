@@ -32,7 +32,7 @@ public partial class ListOfAppointments : System.Web.UI.Page
 
     protected void btnBook_Click(object sender, EventArgs e)
     {
-        if (lstBoxAppointmentDates.SelectedIndex == -1)
+        if (lstBoxAppointmentDates.SelectedIndex != -1)
         {
             Session["AppointmentID"] = -1;
             Response.Redirect("Book Appointment.aspx");
@@ -76,16 +76,9 @@ public partial class ListOfAppointments : System.Web.UI.Page
         //redirects user to booking appointments page
         Response.Redirect("Book Appointment.aspx");
     }
-    protected void lstAppointments_SelectedIndexChanged(object sender, EventArgs e)
-    {
 
-    }
-    protected void lstBoxAppointmentDates_SelectedIndexChanged(object sender, EventArgs e)
+    protected void lstBoxAppointmentDates_SelectedIndexChanged2(object sender, EventArgs e)
     {
-
-    }
-    protected void lstBoxAppointmentDates_SelectedIndexChanged1(object sender, EventArgs e)
-    {
-
+        
     }
 }

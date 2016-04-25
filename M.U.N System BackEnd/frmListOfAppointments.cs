@@ -41,6 +41,8 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointment.tblAppointment' table. You can move, or remove it, as needed.
+            this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSetAppointment.tblAppointment);
 
         }
 
@@ -121,14 +123,22 @@ namespace M.U.N_System_BackEnd
                 //find record to cancel
                 appointment.ThisAppointment.Find(AppointmentID);
                 appointment.Delete();
+                //instance
                 frmListOfAppointments Form = new frmListOfAppointments();
+                //refresh form
                 Form.Refresh();
+                //refresh list
                 lstAppointments.Refresh();
+                //Instance of form
+                frmListOfAppointments New = new frmListOfAppointments();
+                New.Show();
+                //Error Message
                 lblError.Text = "The Order (Number: " + AppointmentID + " ) has been cancelled";
             }
             else
             {
-                lblError.Text = "Please enter a valid Order Number";
+                //Error Message
+                lblError.Text = "Please enter a valid Appointment Number";
             }
         }
 
@@ -151,15 +161,21 @@ namespace M.U.N_System_BackEnd
 
         public void Finish(DateTime AppointmentDate, int SelectedIndex)
         {
+            //remove at selectected index
             lstAppointments.Items.RemoveAt(SelectedIndex);
+
             string EditListBox = "AppointmentDate" + AppointmentDate;
+            //Add
             lstAppointments.Items.Add(EditListBox);
         }
 
         public void AddNewAppointment(DateTime AppointmentDate)
         {
+            //connection to DB
             clsDataConnection DB = new clsDataConnection();
+            //parameter 
             DB.AddParameter("AppointmentDate", AppointmentDate);
+            //excutes store procudre
             DB.Execute("sproc_tblAppointment_Insert");
         }
 

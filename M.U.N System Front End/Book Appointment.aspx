@@ -6,6 +6,11 @@
     <article>
         <h2> Book Appointment</h2>
         <p> 
+            <asp:Label ID="lblAppointment" runat="server" Text="AppointmentDate "></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtAppointmentDate" runat="server" Width="228px" BorderStyle="Solid" AutoCompleteType="Disabled" OnTextChanged="txtAppointmentDate_TextChanged"></asp:TextBox>
+        </p>
+        <p> 
             <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtFirstName" runat="server" Width="228px" BorderStyle="Solid"></asp:TextBox>

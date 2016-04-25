@@ -137,6 +137,11 @@
     <Compile Include="frmSendEmail.Designer.cs">
       <DependentUpon>frmSendEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="OurDatabaseDataSetAppointment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OurDatabaseDataSetAppointment.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +228,17 @@
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OurDatabaseDataSetAppointment.xsc">
+      <DependentUpon>OurDatabaseDataSetAppointment.xsd</DependentUpon>
+    </None>
+    <None Include="OurDatabaseDataSetAppointment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OurDatabaseDataSetAppointment.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OurDatabaseDataSetAppointment.xss">
+      <DependentUpon>OurDatabaseDataSetAppointment.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
