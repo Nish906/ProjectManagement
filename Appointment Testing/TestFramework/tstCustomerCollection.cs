@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ClassLibrary;
+using MyClassLibrary;
 using System.Collections.Generic;
 
 namespace Customer_Test

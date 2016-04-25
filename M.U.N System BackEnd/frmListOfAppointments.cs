@@ -41,22 +41,6 @@ namespace M.U.N_System_BackEnd
 
         private void frmListOfAppointments_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet3.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter3.Fill(this.ourDatabaseDataSet3.tblAppointment);
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet2.tblAppointment' table. You can move, or remove it, as needed.
-            this.tblAppointmentTableAdapter2.Fill(this.ourDatabaseDataSet2.tblAppointment);
-            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointment.tblAppointment' table. You can move, or remove it, as needed.
-            //this.tblAppointmentTableAdapter1.Fill(this.ourDatabaseDataSetAppointment.tblAppointment);
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet1.tblAppointment' table. You can move, or remove it, as needed.
-           
-            // TODO: This line of code loads data into the 'ourDatabaseDataSetAppointment.tblAppointment' table. You can move, or remove it, as needed.
-            //this.tblAppointmentTableAdapter1.Fill(this.ourDatabaseDataSetAppointment.tblAppointment);
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblAppointment' table. You can move, or remove it, as needed.
-            
-            // TODO: This line of code loads data into the 'ourDatabaseDataSet.tblAppointment' table. You can move, or remove it, as needed.
-            //this.tblAppointmentTableAdapter.Fill(this.ourDatabaseDataSet.tblAppointment);
-            
-
 
         }
 
@@ -185,6 +169,11 @@ namespace M.U.N_System_BackEnd
         }
 
         private void lstAppointments_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstAppointment_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
