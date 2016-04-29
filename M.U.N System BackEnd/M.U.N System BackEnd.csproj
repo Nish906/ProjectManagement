@@ -59,6 +59,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEditPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPayment.Designer.cs">
+      <DependentUpon>frmEditPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewPayment.Designer.cs">
+      <DependentUpon>frmViewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPayment.Designer.cs">
+      <DependentUpon>frmAddPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +185,15 @@
     <Compile Include="frmUpdateCustomer.Designer.cs">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmEditPayment.resx">
+      <DependentUpon>frmEditPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewPayment.resx">
+      <DependentUpon>frmViewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPayment.resx">
+      <DependentUpon>frmAddPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </EmbeddedResource>

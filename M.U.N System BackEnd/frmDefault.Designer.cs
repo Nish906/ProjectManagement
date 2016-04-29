@@ -33,6 +33,7 @@
             this.btnEmails = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnAppointments = new System.Windows.Forms.Button();
+            this.btnPayment = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(123, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -49,8 +50,8 @@
             // 
             // btnEmails
             // 
-            this.btnEmails.Location = new System.Drawing.Point(148, 227);
-            this.btnEmails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEmails.Location = new System.Drawing.Point(56, 231);
+            this.btnEmails.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmails.Name = "btnEmails";
             this.btnEmails.Size = new System.Drawing.Size(173, 77);
             this.btnEmails.TabIndex = 1;
@@ -60,8 +61,8 @@
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(148, 318);
-            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCustomers.Location = new System.Drawing.Point(56, 330);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(173, 77);
             this.btnCustomers.TabIndex = 2;
@@ -71,8 +72,8 @@
             // 
             // btnAppointments
             // 
-            this.btnAppointments.Location = new System.Drawing.Point(148, 408);
-            this.btnAppointments.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAppointments.Location = new System.Drawing.Point(251, 231);
+            this.btnAppointments.Margin = new System.Windows.Forms.Padding(2);
             this.btnAppointments.Name = "btnAppointments";
             this.btnAppointments.Size = new System.Drawing.Size(173, 77);
             this.btnAppointments.TabIndex = 3;
@@ -80,17 +81,28 @@
             this.btnAppointments.UseVisualStyleBackColor = true;
             this.btnAppointments.Click += new System.EventHandler(this.btnAppointments_Click);
             // 
+            // btnPayment
+            // 
+            this.btnPayment.Location = new System.Drawing.Point(251, 330);
+            this.btnPayment.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.Size = new System.Drawing.Size(173, 77);
+            this.btnPayment.TabIndex = 4;
+            this.btnPayment.Text = "Payments";
+            this.btnPayment.UseVisualStyleBackColor = true;
+            // 
             // frmDefault
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(80)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(475, 515);
+            this.ClientSize = new System.Drawing.Size(475, 620);
+            this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.btnAppointments);
             this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.btnEmails);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDefault";
             this.Text = "frmDefault";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Button btnEmails;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnAppointments;
+        private System.Windows.Forms.Button btnPayment;
     }
 }
