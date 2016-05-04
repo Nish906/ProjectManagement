@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace M.U.N_System_BackEnd
 {
-    public partial class frmAddPayment : Form
+    public partial class a : Form
     {
-        public frmAddPayment()
+        public a()
         {
             InitializeComponent();
         }

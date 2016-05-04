@@ -1,6 +1,6 @@
 ﻿namespace M.U.N_System_BackEnd
 {
-    partial class frmAddPayment
+    partial class a
     {
         /// <summary>
         /// Required designer variable.
@@ -141,9 +141,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label2.Location = new System.Drawing.Point(94, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 31);
+            this.label2.Size = new System.Drawing.Size(187, 31);
             this.label2.TabIndex = 72;
-            this.label2.Text = "Edit Payment";
+            this.label2.Text = "View Payment";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button2
@@ -166,7 +166,7 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // frmEditPayment
+            // frmAddPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,8 +187,8 @@
             this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.txtCustomerID);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmEditPayment";
-            this.Text = "EditPayment";
+            this.Name = "frmAddPayment";
+            this.Text = "ViewPayment";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
