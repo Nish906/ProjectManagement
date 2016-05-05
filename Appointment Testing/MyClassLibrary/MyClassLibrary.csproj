@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAppointmentCollection.cs" />
+    <Compile Include="clsPaymentCollection.cs" />
+    <Compile Include="clsPayment.cs" />
     <Compile Include="clsAppointments.cs" />
     <Compile Include="clsCustomer.cs" />
     <Compile Include="clsCustomerCollection.cs" />
