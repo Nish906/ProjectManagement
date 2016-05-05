@@ -59,12 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmPartPayment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPartPayment.Designer.cs">
-      <DependentUpon>frmPartPayment.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSearchPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,9 +191,6 @@
     <Compile Include="frmUpdateCustomer.Designer.cs">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmPartPayment.resx">
-      <DependentUpon>frmPartPayment.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmSearchPayment.resx">
       <DependentUpon>frmSearchPayment.cs</DependentUpon>
     </EmbeddedResource>

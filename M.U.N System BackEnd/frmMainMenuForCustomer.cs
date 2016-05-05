@@ -19,9 +19,7 @@ namespace M.U.N_System_BackEnd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Add customer button
-            frmPartPayment Customer = new frmPartPayment();
-            Customer.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -68,8 +66,8 @@ namespace M.U.N_System_BackEnd
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             //Add customer button
-            frmPartPayment Customer = new frmPartPayment();
-            Customer.Show();
+           // frmPartedPayments Customer = new frmPartedPayments();
+          //  Customer.Show();
         }
 
         private void btnFilterPayments_Click(object sender, EventArgs e)

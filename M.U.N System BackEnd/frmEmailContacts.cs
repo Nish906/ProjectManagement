@@ -16,5 +16,10 @@ namespace M.U.N_System_BackEnd
         {
             InitializeComponent();
         }
+
+        private void frmEmailContacts_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

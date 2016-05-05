@@ -1,6 +1,6 @@
 ﻿namespace M.U.N_System_BackEnd
 {
-    partial class frmPartPayment
+    partial class frmAddCustomer
     {
         /// <summary>
         /// Required designer variable.

@@ -44,5 +44,10 @@ namespace M.U.N_System_BackEnd
             this.Hide();
            
         }
+
+        private void frmDefault_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

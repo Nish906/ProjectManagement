@@ -109,9 +109,10 @@
             this.Controls.Add(this.txtTo);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSend);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSendEmail";
             this.Text = "frmSendEmail";
+            this.Load += new System.EventHandler(this.frmSendEmail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
