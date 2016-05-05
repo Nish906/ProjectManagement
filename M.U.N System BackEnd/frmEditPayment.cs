@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace M.U.N_System_BackEnd
 {
-    public partial class a : Form
+    public partial class frmPartPayment : Form
     {
-        public a()
+        public frmPartPayment()
         {
             InitializeComponent();
         }
@@ -30,32 +30,7 @@ namespace M.U.N_System_BackEnd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtCustomerID.Text == "")
-            {
-                if (txtFirstName.Text == "")
-                {
-                    if (txtLastName.Text == "")
-                    {
-                        if (txtCity.Text == "")
-                        {
-                            if (txtPostCode.Text == "")
-                            {
-                                if (txtPhoneNo.Text == "")
-                                {
-                                    if (txtEmailAdd.Text == "")
-                                    {
-                                        lblError.Text = "Please fill in missing details.";
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-                lblError.Text = "";
-            }
+
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
