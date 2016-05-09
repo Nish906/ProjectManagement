@@ -173,6 +173,7 @@
             this.button1.TabIndex = 75;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 
@@ -183,7 +184,7 @@
             this.label3.TabIndex = 74;
             this.label3.Text = "Keyword";
             // 
-            // frmPartPayment
+            // frmSearchPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -206,7 +207,7 @@
             this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.txtCustomerID);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmPartPayment";
+            this.Name = "frmSearchPayment";
             this.Text = "SearchPayment";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             this.ResumeLayout(false);

@@ -52,5 +52,15 @@ namespace M.U.N_System_BackEnd
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //creating a new instance of the main menu form
+            frmViewPayment Open = new frmViewPayment();
+            //display the new instance form
+            Open.Show();
+            //close the current form
+            this.Hide();
+        }
     }
 }

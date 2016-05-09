@@ -180,6 +180,7 @@
             this.button1.TabIndex = 90;
             this.button1.Text = "Update Payment Details";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label8
             // 
@@ -309,7 +310,7 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 74;
             // 
-            // frmPartPayment
+            // frmEditPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -346,7 +347,7 @@
             this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.txtCustomerID);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmPartPayment";
+            this.Name = "frmEditPayment";
             this.Text = "EditPayment";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             this.ResumeLayout(false);
